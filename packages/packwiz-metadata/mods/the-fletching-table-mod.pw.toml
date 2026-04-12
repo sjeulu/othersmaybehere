@@ -1,0 +1,13 @@
+name = "The Fletching Table Mod"
+filename = "TheFletchingTableMod_1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "99dbcfc040333af5f04d1d0d70b43671aba8a5ab"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4715514
+project-id = 448876

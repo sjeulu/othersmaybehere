@@ -1,0 +1,118 @@
+
+[General]
+	"Should sleeping have chance to teleport you?" = true
+	"Can no_one spawn?" = true
+	"Can 'someone' (mining entity) spawn?" = true
+	"Can Sorrow spawn in overworld?" = true
+	"Can Fate spawn in overworld?" = true
+	"Can rare cave chicken event happen?" = true
+	"Can TheEntity kick you and crash the game?" = true
+	"Can 'TheEntity' spawn in overworld after you escape the wonderland?" = true
+	"Can Wanderer spawn in overworld after you escape the wonderland?" = true
+	"Can Flicker spawn in overworld after you escape the wonderland?" = true
+	"Can random structures spawn in overworld?" = true
+	"Can no_one respond to your messages in the chat?" = true
+	"Can TheEntity break torches in overworld?" = true
+	"Can TheSpawn spawn in overworld caves?" = true
+	"Can Skinless kick you from your world?" = true
+	"Can random noise event happen?" = true
+	"Can mining event happen underground?" = true
+	"Can invisible follower spawn in overworld?" = true
+	"Can vanilla music randomly stop?" = true
+	"Can player breath sound play randomly?" = true
+	"Can 'Angel' entity spawn?" = true
+	"Can Wondertree spawn in overworld?" = true
+	"Can Eyed Flesh spawn in overworld?" = true
+	"Can Ethereal Demons spawn in overworld?" = true
+	"Can 'Watching' entity spawn in overworld?" = true
+	"Can Red Eye spawn in overworld?" = true
+	"Can Messenger entity spawn?" = true
+	#When enabled, makes phase system more multiplayer-friendly but you'll have to escape wonderland trough exit block for it to progress
+	"Alternate Phase System" = false
+	"Can 'TheEntity' spawn in nether?" = true
+	"Can Ethereal Demons spawn in nether?" = true
+	"Can Red Eye spawn in nether?" = true
+	"Can Eyed Flesh spawn in nether?" = true
+	"Can Wondertree kick you from your world?" = true
+	"Can 'yourmind' entity kick you from your world?" = true
+	"Can dreamworld be entered by sleeping?" = true
+	"Can Pillar entity spawn in overworld?" = true
+	"Can Demonic Fish spawn in overwolrd?" = true
+	"Can 'The Sphere' entity kick you from your world?" = true
+	"Can remember_me spawn in overworld during post-wonderland phase?" = true
+	"Can The Eye invade your house?" = true
+	"Can Red Eye invade your house?" = true
+	"Can The Eye spawn in overworld?" = true
+
+[Chances]
+	#Chance (1 in X) of no_one's spawn attempt in overworld to be successful
+	"no_one Spawn Chance" = 9.0
+	#Chance (1 in X) of sleeping in bed to teleport you
+	"Bed Teleport Chance" = 10.0
+	#Chance (1 in X) of 'someone''s spawn attempt in overworld to be successful
+	"someone Spawn Chance" = 15.0
+	#Chance (1 in X) of Sorrow's spawn attempt in overworld caves to be successful
+	"Sorrow Spawn Chance" = 8.0
+	#Chance (1 in X) of Fate's spawn attempt in overworld to be successful
+	"Fate Spawn Chance" = 15.0
+	#Chance (1 in X) of 'TheEntity''s spawn attempt in overworld to be successful (can happen only after you escape the wonderland)
+	"TheEntity Spawn Chance" = 30.0
+	#Chance (1 in X) of Wanderer's spawn attempt in overworld to be successful (can happen only after you escape the wonderland)
+	"Wanderer Spawn Chance" = 18.0
+	#Chance (1 in X) of Flicker's spawn attempt in overworld to be successful (can happen only after you escape the wonderland)
+	"Flicker Spawn Chance" = 21.0
+	#Chance (1 in X) of random structure's or random block's spawn attempt to be successful
+	"Random Structure Spawn Chance" = 15.0
+	#Chance (1 in X) for 'grace period' to end (entities can't spawn during it)
+	"Grace Period End Chance" = 20.0
+	#Chance (1 in X) of certain entities to start spawning again after you exit the wonderland
+	"Wonderland Cooldown End Chance" = 66.0
+	#Chance (1 in X) of TheSpawn's overworld caves spawn attempt to be successful
+	"TheSpawn Spawn Chance" = 15.0
+	#Chance (1 in X) of random noise event to happen
+	"Random Noise Chance" = 15.0
+	#Chance (1 in X) of mining event to happen
+	"Mining Event Chance" = 15.0
+	#Chance (1 in X) of invisible followers spawn attempt to be successful
+	"Invisible Follower Spawn Chance" = 10.0
+	#Chance (1 in X) for vanilla music to randomly stop
+	"Stop Music Event Chance" = 10.0
+	#Chance (1 in X) for player.breath sound to play per random attempt
+	"Player Breath Chance" = 26.0
+	#Chance (1 in X) for Angel's spawn attempt to be successful
+	"Angel Spawn Chance" = 20.0
+	#Chance (1 in X) of Eyed Flesh's spawn attempt to be successful
+	"Eyed Flesh Spawn Chance" = 35.0
+	#Chance (1 in X) of Ethereal Demon's spawn attempt to be successful
+	"Ethereal Demon Spawn Chance" = 10.0
+	#Chance (1 in X) of Watching's spawn attempt to be successful
+	"Watching Spawn Chance" = 5.0
+	#Chance (1 in X) of Red Eye's spawn attempt to be successful
+	"Red Eye Spawn Chance" = 35.0
+	#Chance (1 in X) of Wondertree's spawn attempt to be successful
+	"Wondertree Spawn Chance" = 30.0
+	#Chance (1 in X) of Messenger's spawn attempt to be successful
+	"Messenger Spawn Chance" = 10.0
+	#Chance (1 in X) of TheEntity's nether spawn attempt to be successful
+	"TheEntity Nether Spawn Chance" = 13.0
+	#Chance (1 in X) of Ethereal Demon's nether spawn attempt to be successful
+	"Ethereal Demon Nether Chance" = 6.0
+	#Chance (1 in X) of Red Eye's nether spawn attempt to be successful
+	"Red Eye Nether Chance" = 15.0
+	#Chance (1 in X) of Eyed Flesh's nether spawn attempt to be successful
+	"Eyed Flesh Nether Chance" = 25.0
+	#Chance (1 in X) for dreamworld to be entered by sleeping (this can happen only once!)
+	"Dreamworld Enter Chance" = 5.0
+	#Chance (1 in X) of Pillar entity's spawn attempt to be successful
+	"Pillar Spawn Chance" = 10.0
+	#Chance (1 in X) of demonic fish spawn attempt to be successful
+	"Demonic Fish Spawn Chance" = 10.0
+	#Chance (1 in X) of remember_me's spawn attempt to be successful
+	"Remember_me Spawn Chance" = 13.0
+	#Chance (1 in X) for The Eye to invade your house per attempt
+	"The Eye House Invasion Chance" = 10.0
+	#Chance (1 in X) for Red Eye to invade your house per attempt
+	"Red Eye House Invasion Chance" = 15.0
+	#Chance (1 in X) of The Eye's spawn attempt to be successful
+	"The Eye Spawn Chance" = 30.0
+

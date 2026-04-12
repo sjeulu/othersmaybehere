@@ -1,0 +1,13 @@
+name = "DISTURBED (Horror)"
+filename = "the_masked-5.2.0-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5184cb6ff0f711a0956584cb629a223a3be71209"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7221710
+project-id = 1248540

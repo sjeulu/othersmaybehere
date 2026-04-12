@@ -1,0 +1,13 @@
+name = "Endran Optimizer"
+filename = "endran-optimizer-1.3.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9afc69370efdeca2ba2615bf4e07b7b7683d9896"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7868182
+project-id = 1493298

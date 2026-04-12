@@ -1,0 +1,13 @@
+name = "wonderland.jar"
+filename = "the_wonderland-2.1.4-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c7a3372fee4c78293d9e084131fd2fdeadeabb90"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7604140
+project-id = 1393137

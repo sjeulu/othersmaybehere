@@ -1,0 +1,13 @@
+name = "Replace Music with VHS Tape Sound"
+filename = "VHS SOUND.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d5780eee9ffd32264ff2bf61bdcf300804277c67"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5050920
+project-id = 965255

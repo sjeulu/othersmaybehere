@@ -1,0 +1,13 @@
+name = "Alphaish"
+filename = "1.20.1_Alphaish_4.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d8555ef1ad588682f39d74b16f1077855d87ad14"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5020572
+project-id = 953095

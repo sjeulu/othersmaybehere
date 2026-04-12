@@ -1,0 +1,1215 @@
+
+#General settings for Endran Optimizer
+[general]
+	#Master enable/disable for the entire optimizer.
+	#When false, all subsystems are inactive and the server runs vanilla.
+	#Can be toggled at runtime via /endran toggle.
+	enabled = true
+	#Enable verbose debug logging to the server console.
+	#Logs every task submission, deferral, entity skip decision, etc.
+	#Useful for diagnosing issues but very noisy. Toggle at runtime: /endran debug on|off
+	debugLogging = false
+
+#Tick budget allocation settings.
+#Controls how the per-tick time budget is distributed across subsystems.
+#All five budget percentages should sum to 100%. If they don't, they are
+#auto-normalized. Increasing one category means less time for others.
+[tick_budget]
+	#Maximum tick budget in milliseconds before the scheduler stops running tasks.
+	#Range: 1-100. Default: 50 (= 20 TPS). Lower values leave more headroom.
+	#Profiles: vanilla=50, balanced=50, aggressive=45
+	#Range: 1 ~ 100
+	targetMspt = 45
+	#Percentage of tick budget reserved for player-critical tasks.
+	#Player-critical includes: player entity ticks, nearby mob combat,
+	#player-initiated chunk loads. Always gets the biggest slice.
+	#Range: 10-60. Default: 30.
+	#Profiles: vanilla=30, balanced=30, aggressive=40
+	#Range: 10 ~ 60
+	playerCriticalBudgetPercent = 30
+	#Percentage of tick budget allocated to entity processing.
+	#Covers: mob AI, pathfinding, entity movement, collision detection.
+	#Range: 5-50. Default: 25.
+	#Profiles: vanilla=25, balanced=25, aggressive=25
+	#Range: 5 ~ 50
+	entityBudgetPercent = 25
+	#Percentage of tick budget allocated to block entity processing.
+	#Covers: furnaces, hoppers, brewing stands, campfires, modded machines.
+	#Range: 5-30. Default: 15.
+	#Profiles: vanilla=15, balanced=15, aggressive=15
+	#Range: 5 ~ 30
+	blockEntityBudgetPercent = 15
+	#Percentage of tick budget allocated to chunk operations.
+	#Covers: chunk loading, chunk generation, chunk saving.
+	#Range: 5-40. Default: 20.
+	#Profiles: vanilla=20, balanced=20, aggressive=20
+	#Range: 5 ~ 40
+	chunkBudgetPercent = 20
+	#Percentage of tick budget allocated to committing async pipeline results.
+	#Covers: applying off-thread computation results back to the world.
+	#Range: 5-30. Default: 10.
+	#Profiles: vanilla=10, balanced=10, aggressive=10
+	#Range: 5 ~ 30
+	asyncCommitBudgetPercent = 10
+	#Budget multiplier during important events (boss fights, raids).
+	#Temporarily increases the tick budget so the event isn't clipped.
+	#1.3 = 65ms ticks (~15 TPS). 1.0 = no extra budget.
+	#Higher values give more headroom but may cause brief lag for uninvolved players.
+	#Range: 1.0-2.0. Default: 1.3.
+	#Profiles: vanilla=1.0, balanced=1.3, aggressive=1.1
+	#Range: 1.0 ~ 2.0
+	eventBudgetMultiplier = 1.3
+	#Enable unified time-budget bridge between BudgetAllocator and WorkBudget.
+	#When enabled, the adaptive category budgets (entity, chunk, block entity,
+	#redstone) control vanilla operation limits via learned cost-per-operation
+	#estimates. This makes the scheduler govern the ENTIRE tick budget instead
+	#of just the mod's own housekeeping tasks.
+	#When disabled, uses fixed per-LoadState operation counters (V2 behavior).
+	#Disable if you experience unexpected throttling behavior.
+	#Default: true.
+	timeBudgetBridgeEnabled = true
+
+#Fairness settings for per-player load balancing.
+#Tracks how much load each player's area is responsible for.
+#Players whose area exceeds the threshold get extra throttling
+#so one player's lag source doesn't hurt everyone.
+#Threshold scales inversely with player count:
+#  threshold = max(minThreshold, 100/playerCount * scaleFactor)
+[fairness]
+	#Enable per-player fairness throttling.
+	#When enabled, players causing disproportionate load get extra throttling.
+	#Visible via /endran players. Toggle at runtime: /endran toggle fairness.
+	#Profiles: vanilla=false, balanced=true, aggressive=true
+	fairnessEnabled = true
+	#Minimum player count before fairness throttling activates.
+	#With fewer players, both could hover near 50% and both get throttled
+	#simultaneously, degrading the whole server for no benefit.
+	#Range: 2-20. Default: 4.
+	#Range: 2 ~ 20
+	fairnessMinPlayerCount = 4
+	#Multiplier for the per-player fair-share threshold.
+	#threshold = max(minThreshold, 100/playerCount * scaleFactor).
+	#Higher values are more lenient (allow one player to use more share).
+	#At default 2.0 with 10 players: max(15%, 10% * 2.0) = 20% threshold.
+	#Range: 1.0-5.0. Default: 2.0.
+	#Range: 1.0 ~ 5.0
+	fairnessScaleFactor = 2.0
+	#Minimum fairness threshold percentage, regardless of player count.
+	#Prevents over-penalization on massive servers where even 2% is a lot.
+	#At 100 players: max(15%, 1% * 2.0) = 15% (hits the floor).
+	#Range: 5.0-50.0. Default: 15.0.
+	#Range: 5.0 ~ 50.0
+	fairnessMinThreshold = 15.0
+
+#Entity control settings.
+#Controls how mobs are throttled based on distance from players and server load.
+#Disable if using ServerCore's activation range system to avoid double-throttling.
+[entity_control]
+	#Enable entity tick control. When disabled, all entities tick every tick.
+	#Profiles: vanilla=false, balanced=true, aggressive=true
+	entityControlEnabled = true
+	#Range in blocks for nearby entity classification.
+	#Entities within this range always tick every tick (unless HIGH/CRITICAL load).
+	#Uses an 8-block hysteresis buffer to prevent flickering at boundaries.
+	#Range: 16-64. Default: 32.
+	#Profiles: vanilla=64, balanced=32, aggressive=24
+	#Range: 16 ~ 64
+	nearbyEntityRange = 24
+	#Range in blocks for distant entity classification.
+	#Entities beyond this range are classified as FAR and heavily throttled.
+	#A 16-block smooth transition zone prevents hard cutoffs at the boundary.
+	#Range: 64-256. Default: 128.
+	#Profiles: vanilla=256, balanced=128, aggressive=96
+	#Range: 64 ~ 256
+	distantEntityRange = 96
+
+#Chunk governor settings.
+#Limits how many new chunks can load per tick to prevent lag spikes.
+#Disable if using C2ME, which handles chunk loading throttling natively.
+[chunk_governor]
+	#Enable chunk loading governor. Disable if C2ME is installed.
+	#Profiles: vanilla=true, balanced=true, aggressive=true
+	chunkGovernorEnabled = true
+	#Maximum number of chunks allowed in the loading queue before new loads are rejected.
+	#Higher values allow more parallel chunk loading but use more memory.
+	#Range: 50-1000. Default: 200.
+	#Profiles: vanilla=500, balanced=200, aggressive=100
+	#Range: 50 ~ 1000
+	maxChunkQueueSize = 100
+
+#Async pipeline settings.
+#Controls the off-thread computation pipeline used for batched pathfinding,
+#entity classification, goal evaluation, and metrics aggregation.
+[async_pipeline]
+	#Enable asynchronous processing pipeline.
+	#When disabled, all work runs on the main thread (higher MSPT but simpler).
+	asyncEnabled = true
+	#Maximum depth of the async task queue. Jobs beyond this are rejected.
+	#Halved automatically under HIGH/CRITICAL memory pressure.
+	#Range: 16-256. Default: 64.
+	#Range: 16 ~ 256
+	asyncMaxQueueDepth = 64
+	#Thread pool size for the async pipeline (pathfinding, sensing, collision, etc.).
+	#-1 = auto (available processors - 1, minimum 1).
+	#Set explicitly if you want to reserve cores for other mods.
+	#
+	#RECOMMENDED: Leave at -1 (auto) for most servers.
+	#If setting manually, use (cores - 2) to leave headroom for the main
+	#thread and chunk generation. Oversized pools cause thread contention
+	#and HURT performance — more threads != more speed.
+	#
+	#The total of ALL Endran thread pools (async + chunk engine) is
+	#automatically clamped to your available CPU cores at startup.
+	#Range: -1 (auto) or 1+. Default: -1.
+	#Range: -1 ~ 1024
+	asyncThreadPoolSize = -1
+	#Maximum thread pool size for the async pipeline during burst mode.
+	#-1 = auto (normal max * 1.5 + 1, using hyperthread headroom).
+	#Must be >= asyncThreadPoolSize.
+	#
+	#RECOMMENDED: Leave at -1 (auto). Only increase if you have a
+	#high-core-count CPU (16+) and observe burst bottlenecks in /endran profile.
+	#Range: -1 (auto) or 1+. Default: -1.
+	#Range: -1 ~ 1024
+	asyncBurstThreadPoolSize = -1
+
+#Pregeneration settings.
+#Controls the chunk pregeneration engine that generates chunks in the background
+#so they're ready before players arrive.
+[pregeneration]
+	#Enable chunk pregeneration system.
+	#Runs at full speed with no players online, and in 'opportunistic mode'
+	#(reduced batch size) when players are online but load is LOW.
+	#Automatically stopped at CRITICAL memory pressure.
+	pregenEnabled = true
+	#Target CPU utilization for pregeneration when no players are online.
+	#Lower values leave more headroom for server startup tasks.
+	#Range: 0.3-0.95. Default: 0.75.
+	#Range: 0.3 ~ 0.95
+	pregenCpuTarget = 0.75
+	#Maximum number of chunks to pregenerate per batch.
+	#In full-speed mode (no players), batch size can ramp up to 64 automatically.
+	#This sets the cap for opportunistic mode (players online).
+	#Range: 1-64. Default: 16.
+	#Range: 1 ~ 64
+	pregenMaxBatchSize = 16
+	#Enable pregeneration for ALL dimensions (overworld, nether, end, AND modded).
+	#When true, spawn regions in all loaded dimensions are queued on first startup.
+	#This includes modded dimensions like Aether, Twilight Forest, etc.
+	#When false, only the overworld spawn region is pregenerated.
+	pregenAllDimensions = true
+	#Radius in chunks around spawn to pregenerate in the overworld.
+	#A radius of 64 = (2*64+1)^2 = 16,641 chunks.
+	#A radius of 128 = (2*128+1)^2 = 66,049 chunks.
+	#A radius of 256 = (2*256+1)^2 = 263,169 chunks.
+	#Large radii are fully supported — chunks are generated lazily in batches,
+	#so even very large values won't cause memory issues.
+	#Default: 64.
+	#Range: 8 ~ 1875000
+	pregenOverworldRadius = 64
+	#Radius in chunks around spawn to pregenerate in the nether.
+	#Nether has 8:1 block ratio, but chunk size is the same (16x16 blocks).
+	#Default: 32.
+	#Range: 8 ~ 234375
+	pregenNetherRadius = 32
+	#Radius in chunks around spawn to pregenerate in the end.
+	#Only the main island area and nearby outer islands are typically needed.
+	#Vanilla end max size: same as overworld (1,875,000 chunks per axis).
+	#Main end island is ~64 chunks across; outer islands start at ~62 chunks from center.
+	#Range: 8-128. Default: 16.
+	#Range: 8 ~ 1875000
+	pregenEndRadius = 16
+	#Radius in chunks around spawn to pregenerate in modded dimensions.
+	#Applied to any dimension added by mods (e.g., Aether, Twilight Forest,
+	#The Betweenlands, Blue Skies, etc.).
+	#Modded dimension sizes vary — most are similar to overworld size.
+	#Range: 8-128. Default: 32.
+	#Range: 8 ~ 1875000
+	pregenModdedDimensionRadius = 32
+
+#Memory monitoring settings.
+#Tracks JVM heap usage and allocation rate to detect memory pressure.
+#Triggers GC suggestions, async queue reduction, and pregen shutdown.
+[memory]
+	#Enable memory usage monitoring.
+	#When disabled, no memory-based actions are taken (GC, queue reduction, etc.).
+	memoryMonitorEnabled = true
+	#Memory usage percentage threshold to trigger HIGH pressure state.
+	#At HIGH: async queue halved. At CRITICAL (threshold+10): pregen stopped, GC frequent.
+	#Range: 50-95. Default: 85.
+	#Profiles: vanilla=95, balanced=85, aggressive=70
+	#Range: 50 ~ 95
+	memoryHighThreshold = 85
+	#Enable System.gc() suggestions under memory pressure.
+	#Automatically skipped for concurrent collectors (G1, ZGC, Shenandoah)
+	#because these manage their own scheduling and forced GC is counterproductive.
+	#Only applies to ParallelGC/Serial: MODERATE=every 200t, HIGH=50t, CRITICAL=20t.
+	#Set to false to disable GC suggestions without disabling memory monitoring.
+	gcSuggestionsEnabled = true
+
+#Metrics output settings.
+#Controls the periodic metrics dump written to the world directory.
+#Dump interval: every 100 ticks (5 seconds). Written atomically.
+[metrics]
+	#Output format for the metrics dump file.
+	#Options: json, prometheus, both.
+	#'json' writes endran_metrics.json (custom dashboards, scripts).
+	#'prometheus' writes endran_metrics.prom (node_exporter textfile collector).
+	#'both' writes both files.
+	#Default: json.
+	metricsFormat = "json"
+
+#Debug settings for the async pipeline.
+#Development/testing tools, not for production use.
+[async_debug]
+	#Enable debug mode that detects overlapping commit scopes.
+	#When enabled, logs a warning if two jobs with the same key prefix are
+	#in-flight simultaneously, indicating they should be submitted sequentially.
+	#Zero overhead when disabled. Default: false.
+	debugOverlapDetection = false
+
+#Logging settings.
+#Controls the verbosity of Endran's console output.
+[logging]
+	#Minimum log level for Endran console output.
+	#Options: debug, info, warn, error.
+	#'debug' enables verbose per-tick diagnostics.
+	#'info' is recommended for production.
+	#Default: info.
+	logLevel = "info"
+	#Log entity throttle summaries every N ticks (0 to disable).
+	#Only applies at debug level.
+	#Range: 0-1200. Default: 200.
+	#Range: 0 ~ 1200
+	entityThrottleLogInterval = 200
+
+#Block entity tick control settings.
+#Controls which block entities can be skipped during throttling.
+#Furnaces, hoppers, droppers, dispensers, comparators, and observers
+#are NEVER skipped. Only brewing stands and campfires are skippable.
+[block_entity]
+	#Registry names of modded block entities that should NEVER be skipped.
+	#Use this for modded machines that require precise tick timing.
+	#Modded block entities already default to 'never skipped', but this list
+	#provides explicit protection against future skip-list changes.
+	#Example: ["create:mechanical_press", "mekanism:enrichment_chamber"]
+	skipExemptions = []
+
+#Modded entity classification settings.
+#Controls how modded entities and block entities are classified for optimization.
+#Entity priorities use format: 'mod:entity_type=CATEGORY' (e.g., 'create:contraption=NEARBY')
+#Skippable block entities use format: 'mod:block_type' (e.g., 'create:millstone')
+[modded_entity]
+	#Override classifications for modded entity types.
+	#Format: 'mod:entity_type=CATEGORY' where CATEGORY is one of:
+	#PLAYER_CRITICAL, NEARBY, DISTANT, FAR, HIGH_COST_AI.
+	#Example: ["create:contraption=NEARBY", "twilightforest:naga=PLAYER_CRITICAL"]
+	entityPriorities = []
+	#Modded block entity types that CAN be throttled under load.
+	#By default, modded block entities are NEVER skipped (safe default).
+	#Add types here that are safe to skip occasionally (decorative, low-importance).
+	#Format: 'mod:block_type'. Example: ["create:millstone", "supplementaries:sign_post"]
+	skippableBlockEntities = []
+	#Enable auto-detection heuristics for modded entity classification.
+	#When enabled, Endran will attempt to classify unknown modded entities
+	#based on their vanilla superclass (e.g., extends EnderDragon → PLAYER_CRITICAL).
+	#Auto-detected classifications are saved to endran_entity_registry.json for review.
+	autoDetectEnabled = true
+
+#Consistency mode settings.
+#Controls the trade-off between performance and determinism.
+#Some servers (technical Minecraft, redstone-heavy) need predictable behavior.
+[consistency]
+	#Global consistency mode. Options: adaptive, balanced, strict.
+	#'adaptive' (default) = variable tick rates based on load — maximum performance.
+	#'balanced' = fixed skip patterns — deterministic but still throttles.
+	#'strict' = no tick skipping at all — only budget allocation and chunk limiting.
+	globalMode = "adaptive"
+	#Per-subsystem override for entity ticking. Options: global, adaptive, balanced, strict.
+	#'global' = use the global mode setting.
+	entityMode = "global"
+	#Per-subsystem override for chunk operations.
+	chunkMode = "global"
+	#Per-subsystem override for block entity ticking.
+	blockEntityMode = "global"
+
+#Adaptive feedback loop settings.
+#Detects when throttling causes measurable side effects (entity accumulation,
+#AI stalls, item buildup) and automatically reduces throttling in affected areas.
+[feedback]
+	#Enable adaptive feedback detection.
+	#When enabled, monitors for throttling side effects and reduces throttling
+	#in regions where it's causing problems.
+	feedbackEnabled = true
+	#Degradation score threshold to trigger throttle reduction (0.0-1.0).
+	#Lower = more sensitive (reduces throttling sooner). Higher = more tolerant.
+	#Range: 0.3-0.9. Default: 0.6.
+	#Range: 0.3 ~ 0.9
+	degradationThreshold = 0.6
+	#How often (in ticks) to sample for degradation signals.
+	#Lower = more responsive but higher overhead. Default: 20 (once per second).
+	#Range: 5-200.
+	#Range: 5 ~ 200
+	feedbackSampleInterval = 20
+
+#Scheduler V2 settings.
+#Controls the three-layer scheduler architecture: detection, decision, execution.
+#Detection runs every tick (near-zero cost). Decision runs adaptively.
+#These intervals control how often the decision layer runs.
+[scheduler_v2]
+	#Decision interval (ticks) when server is stable (MSPT < 37ms).
+	#Higher = less overhead but slower reaction. Default: 20 (1 second).
+	#Range: 5 ~ 100
+	decisionIntervalStable = 20
+	#Decision interval (ticks) when load is rising (MSPT 37-47ms).
+	#Default: 10 (0.5 seconds).
+	#Range: 3 ~ 50
+	decisionIntervalRising = 10
+	#Decision interval (ticks) when server is spiking (MSPT >= 47ms).
+	#Default: 5 (0.25 seconds).
+	#Range: 1 ~ 20
+	decisionIntervalSpiking = 5
+	#Maximum entity classifications to cache.
+	#Higher = more cache hits but more memory. Default: 4096.
+	#Range: 256 ~ 16384
+	entityCacheMaxSize = 4096
+	#Ticks before a cached entity classification is considered stale.
+	#Stale entries are re-classified on the next decision tick. Default: 100.
+	#Range: 20 ~ 500
+	entityCacheStaleThreshold = 100
+	#Maximum entities to re-classify per decision tick.
+	#Caps the cost of partial refresh. Default: 200.
+	#Range: 50 ~ 1000
+	entityCacheMaxRefreshPerCycle = 200
+	#Consecutive budget overruns before entering fallback mode.
+	#Default: 10.
+	#Range: 3 ~ 50
+	failsafeBudgetOverrunThreshold = 10
+	#Stable ticks needed to exit fallback mode.
+	#Default: 200 (10 seconds).
+	#Range: 50 ~ 1000
+	failsafeRecoveryTicks = 200
+
+#Player-facing indicator settings.
+#Shows a boss bar to OPs when the server is under HIGH or CRITICAL load.
+#Disabled by default to avoid visual clutter.
+[player_indicators]
+	#Enable boss bar indicators for server operators.
+	#Only visible to players with OP permissions (level 2+).
+	#Shows entity throttle rate during HIGH/CRITICAL load states.
+	indicatorsEnabled = false
+
+#Burst mode settings.
+#Burst mode is an event-driven override that activates during player joins,
+#teleports, and queue spikes. It temporarily shifts chunk loading priority,
+#freezes mitigation escalation, and pre-tightens the load classification
+#to prevent lag spikes from propagating.
+[burst_mode]
+	#Enable burst mode. When enabled, the system reacts proactively to
+	#player joins, teleports, and chunk queue spikes.
+	enabled = true
+	#Base duration of burst mode in ticks. Default: 60 (3 seconds).
+	#Range: 20-200.
+	#Range: 20 ~ 200
+	durationTicks = 60
+	#Minimum teleport distance (blocks) to trigger burst mode.
+	#Teleports shorter than this are not considered RTP/large-distance events.
+	#Range: 32-1024. Default: 128.
+	#Range: 32.0 ~ 1024.0
+	teleportDistanceThreshold = 128.0
+	#Maximum number of times burst mode can be extended if the chunk queue
+	#is still pressured when burst is about to expire.
+	#Range: 0-5. Default: 2.
+	#Range: 0 ~ 5
+	maxExtensions = 2
+
+#Dynamic performance settings.
+#Automatically adjusts view distance, simulation distance, chunk tick distance,
+#and mobcap percentage based on current server performance.
+#Disabled by default — enable for servers that need automatic scaling.
+[dynamic_performance]
+	#Enable dynamic performance adjustments.
+	#When enabled, the server automatically reduces distances and mobcaps
+	#when TPS drops, and restores them when performance recovers.
+	enabled = true
+	#Target MSPT for dynamic adjustments. Settings are reduced when above this.
+	#Range: 20-50. Default: 45.
+	#Range: 20 ~ 50
+	targetMspt = 45
+	#Maximum (default) view distance. Range: 2-32. Default: 10.
+	#Range: 2 ~ 32
+	viewDistanceMax = 10
+	#Minimum view distance under load. Range: 2-32. Default: 5.
+	#Range: 2 ~ 32
+	viewDistanceMin = 5
+	#Maximum (default) simulation distance. Range: 2-32. Default: 10.
+	#Range: 2 ~ 32
+	simulationDistanceMax = 10
+	#Minimum simulation distance under load. Range: 2-32. Default: 2.
+	#Range: 2 ~ 32
+	simulationDistanceMin = 2
+	#Maximum chunk tick distance (for random ticks and mob spawning).
+	#Range: 2-32. Default: 10.
+	#Range: 2 ~ 32
+	chunkTickDistanceMax = 10
+	#Minimum chunk tick distance under load. Range: 1-32. Default: 2.
+	#Range: 1 ~ 32
+	chunkTickDistanceMin = 2
+	#Maximum mobcap percentage (100 = vanilla). Range: 10-100. Default: 100.
+	#Range: 10 ~ 100
+	mobcapPercentMax = 100
+	#Minimum mobcap percentage under load. Range: 10-100. Default: 50.
+	#Range: 10 ~ 100
+	mobcapPercentMin = 50
+	#Ticks between each adjustment step. Range: 100-6000. Default: 300 (15s).
+	#Range: 100 ~ 6000
+	adjustmentInterval = 300
+
+#Villager lobotomization settings.
+#Reduces tick rate for villagers stuck in tiny spaces (trading halls).
+#A villager is considered 'lobotomized' if it cannot move more than 1 block.
+[villager_lobotomize]
+	#Enable villager lobotomization. Default: true.
+	enabled = true
+	#Tick interval for lobotomized (trapped) villagers (1 = every tick, 20 = once/second).
+	#Range: 2-100. Default: 20.
+	#Range: 2 ~ 100
+	tickInterval = 20
+	#Range in blocks within which a player 'observes' a villager.
+	#Villagers beyond this range from ALL players enter unobserved mode
+	#with reduced AI (no POI scanning, pathfinding, or gossip).
+	#Range: 16-128. Default: 48.
+	#Range: 16 ~ 128
+	awarenessRange = 48
+	#Tick interval for unobserved villagers (no player within awareness range).
+	#Lower = more responsive but more expensive. 40 = 2x/second.
+	#Range: 4-100. Default: 40.
+	#Range: 4 ~ 100
+	unobservedInterval = 40
+	#Number of ticks to spread wake-up over when a player enters awareness range.
+	#Prevents 200 villagers from all running full AI on the same tick.
+	#During stagger, villagers run brain every 4th tick with ID-based offset.
+	#Range: 1-40. Default: 10.
+	#Range: 1 ~ 40
+	staggerTicks = 10
+
+#Named entity protection settings.
+#Prevents named entities (entities with a custom name tag) from being
+#hurt or despawned. Useful for protecting pets, named mobs, and builds.
+#This does NOT affect players or item/XP entities — only living mobs.
+[named_entity_protection]
+	#Enable named entity protection. When enabled, any living mob with a
+	#custom name tag cannot take damage or be despawned.
+	#Default: false (disabled).
+	enabled = false
+	#When enabled, named mobs are completely invincible — even players
+	#cannot kill them. The only way to remove the mob is to remove its
+	#name tag first. Void/out-of-world damage is still allowed to prevent
+	#entities stuck in infinite fall loops.
+	#Requires named_entity_protection.enabled = true.
+	#Default: false.
+	invincible = false
+
+#Breeding cap settings.
+#Prevents excessive breeding in a small area to avoid entity lag.
+[breeding_caps]
+	#Enable breeding caps. Default: true.
+	enabled = true
+	#Maximum animals of one type that can breed within the radius.
+	#Range: 2-256. Default: 32.
+	#Range: 2 ~ 256
+	animalLimit = 32
+	#Radius in blocks to check for same-type animals.
+	#Range: 8-128. Default: 64.
+	#Range: 8 ~ 128
+	animalRange = 64
+	#Maximum villagers that can breed within the radius.
+	#Range: 2-128. Default: 24.
+	#Range: 2 ~ 128
+	villagerLimit = 24
+	#Radius in blocks to check for villagers.
+	#Range: 8-128. Default: 64.
+	#Range: 8 ~ 128
+	villagerRange = 64
+
+#Spawn enforcement settings.
+#Forces mob spawners, zombie reinforcements, and nether portal spawns
+#to respect mobcaps. Vanilla ignores caps for these sources.
+[spawn_enforcement]
+	#Force mob spawners to respect the mobcap for their mob type.
+	#Prevents spawner farms from ignoring mob limits. Default: true.
+	enforceSpawnerMobcaps = true
+	#Force zombie reinforcements to respect the monster mobcap.
+	#Prevents infinite zombie cascades on Hard difficulty. Default: true.
+	enforceZombieReinforcements = true
+	#Force nether portal zombie piglin spawns to respect the monster mobcap.
+	#Prevents AFK piglin farms from bypassing spawn limits. Default: true.
+	enforcePortalSpawns = true
+	#Extra capacity buffer above the mobcap before blocking spawns.
+	#Range: 0-64. Default: 32.
+	#Range: 0 ~ 64
+	extraCapBuffer = 32
+
+#Entity merging settings.
+#Controls merge radius for XP orbs and item entities.
+#Larger radius = fewer entities = better performance.
+[entity_merging]
+	#Search radius in blocks for XP orb merging. Vanilla: 0.5.
+	#Range: 0.5-8.0. Default: 3.0.
+	#Range: 0.5 ~ 8.0
+	xpMergeRadius = 3.0
+	#XP merge chance denominator. 1 = always, 8 = 12.5% chance, 40 = 2.5%.
+	#Range: 1-40. Default: 8.
+	#Range: 1 ~ 40
+	xpMergeFraction = 8
+	#Search radius in blocks for item entity merging. Vanilla: 0.5.
+	#Range: 0.5-8.0. Default: 2.0.
+	#Range: 0.5 ~ 8.0
+	itemMergeRadius = 2.0
+	#Enable accelerated despawn for distant old items under HIGH/CRITICAL load.
+	#Items >64 blocks from all players, alive >2 minutes, and unnamed will despawn
+	#2x faster under HIGH load and 4x faster under CRITICAL load.
+	#Default: true.
+	itemDespawnAccelerationEnabled = true
+	#Enable batched XP orb collection to reduce per-orb overhead.
+	#Limits collection to 10 orbs per player per tick (20 under HIGH+ load).
+	#Excess orbs defer to the next tick instead of being collected immediately.
+	#Default: true.
+	xpBatchCollectionEnabled = true
+
+#Hopper chain deduplication.
+#When a linear chain of hoppers all point into each other, evaluates
+#the chain as a single operation instead of N individual hopper ticks.
+#Reduces tick time on technical servers with long hopper chains.
+[hopper_chain]
+	#Enable hopper chain deduplication.
+	#Marks downstream hoppers in a chain as already-evaluated so they skip
+	#redundant push operations. Pulling from above still works normally.
+	#Default: true.
+	enabled = true
+
+#Explosion optimization settings
+[explosion]
+	#Cache explosion ray-cast patterns for recurring explosions (TNT farms).
+	#Saves CPU when many explosions happen at the same power level.
+	explosionOptimizationEnabled = true
+
+#Redstone state caching settings.
+#Caches redstone wire power levels and comparator outputs
+#to avoid redundant recalculation when neighbors haven't changed.
+[redstone_caching]
+	#Enable redstone state caching.
+	#Caches computed power levels for redstone wire and comparator outputs.
+	#Cache is invalidated when neighbor blocks change. Default: true.
+	enabled = true
+
+#Block entity grouping settings.
+#Groups block entities by type during iteration for better CPU cache locality.
+[block_entity_grouping]
+	#Enable block entity type grouping.
+	#Every 20 ticks, sorts the block entity tick list by type so
+	#same-type block entities are processed together. Only activates when count > 50.
+	#Default: true.
+	enabled = true
+
+#Chunk write coalescing settings.
+#Merges redundant chunk save operations when the same chunk
+#is submitted multiple times before compression completes.
+[chunk_write_coalescing]
+	#Enable chunk write coalescing.
+	#Replaces older pending compression jobs with newer data for the same chunk.
+	#Default: true.
+	enabled = true
+
+#Low-level optimization toggles.
+#These are safe, high-gain patches with minimal gameplay impact.
+#All enabled by default.
+[optimizations]
+	#Cache the ticking chunks list instead of rebuilding every tick.
+	#Refreshed once per second. Major gain on high-view-distance servers.
+	cachedTickingChunks = true
+	#Use faster biome lookups during mob spawning.
+	#Slightly less accurate at biome boundaries (mobs may spawn 1-2 blocks
+	#across a biome border). Does NOT affect structure spawning.
+	fastBiomeLookups = true
+	#Cache parsed commands in command blocks to avoid re-parsing each execution.
+	optimizeCommandBlocks = true
+	#Cancel duplicate fluid tick scheduling within the same game tick.
+	#Vanilla schedules fluid ticks redundantly. May cause very slight behavior changes.
+	cancelDuplicateFluidTicks = true
+	#Prevent synchronous chunk loads where possible to avoid lag spikes.
+	#Maps may only update for loaded chunks (slightly smaller radius).
+	reduceSyncLoads = true
+	#Prevent thrown enderpearls from force-loading chunks.
+	#Reverts to pre-1.21.2 behavior. Thrown pearls in unloaded chunks are lost.
+	preventEnderpearlChunkloading = true
+	#Prevent players from moving into unloaded chunks.
+	#Avoids lag spikes when players fly or teleport into ungenerated areas.
+	preventUnloadedChunkMovement = true
+
+#Per-spawngroup mobcap and spawn rate settings.
+#Set to -1 to use the vanilla default for that group.
+#Mobcap = maximum entities of this type. Spawn interval = ticks between attempts.
+[mobcaps]
+	#Monster mobcap. Vanilla: 70. Set -1 for vanilla default.
+	#Range: -1 ~ 200
+	monsterCap = -1
+	#Creature mobcap. Vanilla: 10. Set -1 for vanilla default.
+	#Range: -1 ~ 200
+	creatureCap = -1
+	#Ambient mobcap. Vanilla: 15. Set -1 for vanilla default.
+	#Range: -1 ~ 200
+	ambientCap = -1
+	#Axolotl mobcap. Vanilla: 5. Set -1 for vanilla default.
+	#Range: -1 ~ 200
+	axolotlCap = -1
+	#Underground water creature mobcap. Vanilla: 5. Set -1 for vanilla default.
+	#Range: -1 ~ 200
+	undergroundWaterCreatureCap = -1
+	#Water creature mobcap. Vanilla: 5. Set -1 for vanilla default.
+	#Range: -1 ~ 200
+	waterCreatureCap = -1
+	#Water ambient mobcap. Vanilla: 20. Set -1 for vanilla default.
+	#Range: -1 ~ 200
+	waterAmbientCap = -1
+
+#Lighting update batching settings.
+#Batches light recalculations to process them in bulk at the end of each tick
+#instead of individually. Under HIGH/CRITICAL load, skips updates far from players.
+[lighting_batching]
+	#Enable lighting update batching.
+	#Collects light updates during a tick and processes them in a single batch.
+	#Under HIGH/CRITICAL load, skips updates for blocks >128 blocks from any player.
+	#Default: true.
+	enabled = true
+	#Maximum number of light updates to process per tick batch.
+	#Excess updates are deferred to the next tick.
+	#Range: 64-1024. Default: 256.
+	#Range: 64 ~ 1024
+	batchSize = 256
+
+#Spawn algorithm optimization settings.
+#Caches biome spawn lists and applies load-aware spawn attempt limits.
+#Under high load, restricts spawning to chunks near players.
+[spawn_optimization]
+	#Enable spawn algorithm optimization.
+	#Caches biome spawn lists (200 tick TTL) and limits spawn attempts per tick
+	#based on current server load state.
+	#Default: true.
+	enabled = true
+
+#Regional load tracking settings.
+#Divides the world into 16x16 chunk regions and tracks per-region load metrics.
+#Used to identify hotspot regions causing disproportionate server load.
+[regional_load_tracking]
+	#Enable regional load tracking in ZoneManager.
+	#Periodically scans entity and block entity counts per region.
+	#Results available via getHotspotRegions() and getRegionLoad().
+	#Default: true.
+	enabled = true
+
+#Chunk Engine settings.
+#Dedicated chunk generation system with its own thread pool, per-player queues,
+#cost-weighted in-flight concurrency control, and burst thread expansion.
+#Replaces per-tick rate limiting with a proper concurrent pipeline.
+[chunk_engine]
+	#Enable the dedicated chunk engine.
+	#When enabled, chunk load/gen decisions use in-flight cost-weighted concurrency
+	#instead of per-tick rate limits. Disable to fall back to legacy per-tick limiting.
+	#Default: true.
+	enabled = true
+	#Maximum total cost-weighted in-flight chunk operations.
+	#Cost 1.0 = a plains chunk. Mountains = ~2.0, deep dark = ~2.5.
+	#Higher values = more parallel chunk gen. Lower = less CPU contention.
+	#Range: 4.0-64.0. Default: 16.0.
+	#Range: 4.0 ~ 64.0
+	maxInFlightCost = 16.0
+	#Maximum in-flight chunks per player at LOW load.
+	#Scales down automatically under load (HIGH = 50%, CRITICAL = 25%).
+	#Range: 1+. Default: 8.
+	#Range: 1 ~ 1024
+	perPlayerMaxInFlight = 8
+	#Thread pool size for the dedicated chunk generation pool.
+	#-1 = auto (cores / 4, minimum 2, maximum 4).
+	#This pool is completely separate from the async pipeline.
+	#
+	#RECOMMENDED: Leave at -1 (auto) for most servers.
+	#If setting manually, use 2-4. Chunk generation is memory-bandwidth
+	#bound, not CPU-bound — adding more threads hits diminishing returns
+	#fast and increases GC pressure from concurrent worldgen allocations.
+	#
+	#The total of ALL Endran thread pools (async + chunk engine) is
+	#automatically clamped to your available CPU cores at startup.
+	#Range: -1 (auto) or 1+. Default: -1.
+	#Range: -1 ~ 1024
+	threadPoolSize = -1
+	#Maximum thread pool size for chunk generation during burst mode.
+	#-1 = auto (2x base thread count).
+	#Must be >= threadPoolSize.
+	#
+	#RECOMMENDED: Leave at -1 (auto). Burst mode is short-lived and
+	#self-regulating. Oversizing causes memory pressure spikes during worldgen.
+	#Range: -1 (auto) or 1+. Default: -1.
+	#Range: -1 ~ 1024
+	burstThreadPoolSize = -1
+
+#Entity sleeping optimization.
+#Entities that are truly idle (zero velocity, on ground, no target,
+#no nearby player) skip their entire tick under HIGH/CRITICAL load.
+[entity_sleeping]
+	#Enable entity sleeping. Default: true.
+	enabled = true
+
+#Furnace optimization.
+#Skips furnace/smoker/blast furnace ticking when completely idle
+#(no fuel burning and no input/fuel items).
+[furnace_optimization]
+	#Enable furnace idle skip. Default: true.
+	enabled = true
+
+#Map update throttle.
+#Reduces map data update frequency from every tick to every 4th tick.
+#Under HIGH/CRITICAL load, further reduced to every 10th tick.
+[map_throttle]
+	#Enable map update throttle. Default: true.
+	enabled = true
+
+#Goal selector optimization.
+#Throttles GoalSelector evaluation to every other tick.
+#Running goals still tick normally, only new goal evaluation is throttled.
+[goal_selector]
+	#Enable goal selector throttle. Default: true.
+	enabled = true
+
+#Raid tick throttle.
+#Skips Raids.tick() entirely when no raids are active.
+[raid_throttle]
+	#Enable raid tick throttle. Default: true.
+	enabled = true
+
+#Weather state cache.
+#Caches isRaining/isThundering results once per tick instead of
+#rechecking for every ticking chunk.
+[weather_cache]
+	#Enable weather state caching. Default: true.
+	enabled = true
+
+#Entity activation range.
+#Entities beyond this distance from all players have their full tick
+#skipped entirely (not just AI) under HIGH/CRITICAL load.
+#This is the most aggressive entity optimization and provides the
+#largest performance gains for distant entities.
+[activation_range]
+	#Enable entity activation range. Default: true.
+	enabled = true
+	#Distance in blocks beyond which entities are fully deactivated.
+	#Only applies under HIGH/CRITICAL load.
+	#Range: 64-512. Default: 192.
+	#Range: 64 ~ 512
+	range = 128
+
+#Leaf decay optimization.
+#Skips decay checks for leaves safely connected to logs (distance <= 6).
+#Throttles mass decay events under load to prevent lag spikes.
+[leaf_decay]
+	#Enable leaf decay optimization. Default: true.
+	enabled = true
+
+#Hopper cooldown optimization.
+#Extends cooldown for idle hoppers (empty, nothing to pull/push).
+#Reduces frequency of pointless inventory scans.
+[hopper_cooldown]
+	#Enable hopper idle cooldown extension. Default: true.
+	enabled = true
+
+#Hopper dirty flag optimization.
+#Tracks whether containers have changed since last hopper scan.
+#Skips inventory scanning when source and destination are unchanged.
+#Biggest single hopper optimization — eliminates pointless scans.
+[hopper_dirty_flag]
+	#Enable hopper inventory dirty flag checking. Default: true.
+	enabled = true
+
+#Neighbor update culling.
+#Skips sending block updates to blocks that don't react to them.
+#Most blocks (stone, dirt, wood) have empty neighborChanged() handlers.
+#Only reactive blocks (redstone, pistons, doors, etc.) receive updates.
+[neighbor_update_culling]
+	#Enable neighbor update culling. Default: true.
+	enabled = true
+
+#Collision shape cache.
+#Caches VoxelShape results for modded blocks with complex collision shapes.
+#Vanilla blocks are excluded (already optimized). Cache TTL: 100 ticks.
+[collision_shape_cache]
+	#Enable collision shape caching. Default: true.
+	enabled = true
+
+#Modded machine idle detection.
+#Auto-detects idle modded machines by monitoring setChanged() calls.
+#Machines that don't modify state for 100+ ticks are classified as idle
+#and tick at reduced rate under load. Rechecks every 20 ticks.
+[modded_machine_idle]
+	#Enable modded machine idle detection. Default: true.
+	enabled = true
+
+#Recipe lookup caching.
+#Caches recipe registry lookups by input item identity.
+#In large modpacks (300+ mods), the recipe registry is massive and
+#queried every tick by active machines (Create, Mekanism, Thermal, etc.).
+#Cache uses TTL-based eviction and auto-invalidates on /reload.
+[recipe_lookup_cache]
+	#Enable recipe lookup caching. Default: true.
+	enabled = true
+
+#Pathfinding node cache.
+#Caches block walkability/passability results for pathfinding.
+#When many mobs pathfind through the same area, the pathfinder
+#recalculates node costs for identical positions repeatedly.
+#Short TTL (5 ticks) ensures cache stays fresh as blocks change.
+[pathfinding_node_cache]
+	#Enable pathfinding node caching. Default: true.
+	enabled = true
+
+#Network packet batching.
+#Under HIGH/CRITICAL load, reduces entity position/rotation update
+#packet frequency. Helps with 5+ players each loading entity-dense areas.
+#Only throttles movement updates; critical packets sent immediately.
+[packet_batching]
+	#Enable network packet batching. Default: true.
+	enabled = true
+
+#Scoreboard optimization.
+#Suppresses redundant scoreboard update broadcasts.
+#Modpacks with quest systems (FTB Quests, BetterQuesting) or custom
+#objectives often broadcast every tick even when values haven't changed.
+[scoreboard_optimization]
+	#Enable scoreboard change detection. Default: true.
+	enabled = true
+
+#NBT comparison fast-path.
+#Adds hash-based fast rejection to ItemStack tag comparisons.
+#Mods do massive amounts of ItemStack.matches() calls which trigger
+#deep NBT tree walks. A cached hash rejects non-matches in O(1).
+[nbt_fast_path]
+	#Enable NBT hash fast-path. Default: true.
+	enabled = true
+
+#Multiblock sleep propagation.
+#Propagates idle/sleep state across multiblock structures.
+#When a controller BE is idle, adjacent same-mod peripheral BEs
+#are also skipped. Benefits Mekanism, Immersive Engineering, Create.
+[multiblock_sleep]
+	#Enable multiblock sleep propagation. Default: true.
+	enabled = true
+
+#Scheduled tick deduplication.
+#Deduplicates block and fluid scheduled ticks to prevent redundant
+#processing. Modded redstone and fluid mechanics can pile up duplicate
+#ticks at the same position for the same type.
+[scheduled_tick_dedup]
+	#Enable scheduled tick deduplication. Default: true.
+	enabled = true
+
+#Worldgen direct block placement (Noisium-style).
+#During noise-based terrain generation, bypasses the full
+#LevelChunkSection.setBlockState() path and directly writes to the
+#palette storage. Skips old-state retrieval and redundant count tracking
+#since during noise fill, sections start empty and each position is
+#written exactly once. Yields 20-30% faster chunk generation.
+[worldgen_direct_placement]
+	#Enable direct worldgen block placement. Default: true.
+	enabled = true
+
+#Alternate Current — optimized redstone wire power calculation.
+#Replaces recursive neighbor updates with a single-pass power propagation.
+#Significantly reduces redstone wire update cost for large contraptions.
+[alternate_current]
+	#Enable alternate current redstone optimization. Default: true.
+	enabled = true
+
+#Parallel Chunk Generation — runs chunk generation tasks concurrently.
+#Uses a ForkJoinPool to allow multiple chunks to generate in parallel.
+#Thread count: availableProcessors - 2 (minimum 1).
+[parallel_chunk_gen]
+	#Enable parallel chunk generation. Default: true.
+	enabled = true
+
+#Network Flush Consolidation — batches network channel flushes.
+#Instead of flushing per-packet, consolidates all flushes to the end
+#of each server tick, reducing syscall overhead.
+[network_flush_consolidation]
+	#Enable network flush consolidation. Default: true.
+	enabled = true
+
+#Brain Tick Throttle (DAB - Dynamic Activation of Brain).
+#Reduces brain tick frequency for entities far from players.
+#0-32 blocks: every tick. 32-64: every 2. 64-128: every 4. 128+: every 8.
+[brain_tick_throttle]
+	#Enable brain tick throttling. Default: true.
+	enabled = true
+
+#Per-Player Spawns — tracks mob counts per-player instead of globally.
+#Each player gets their own mobcap budget so one player's mob farm
+#does not starve spawns for others.
+[per_player_spawns]
+	#Enable per-player spawn tracking. Default: true.
+	enabled = true
+
+#Equipment Change Tracking — avoids recalculating attribute modifiers
+#every tick by tracking a hash of equipped items and only recalculating
+#when equipment actually changes.
+[equipment_tracking]
+	#Enable equipment change tracking optimization. Default: true.
+	enabled = true
+
+#Block Entity Sleep — extended idle detection for block entities.
+#Detects idle brewing stands, campfires, chests, sculk sensors,
+#sculk shriekers, and shulker boxes. If idle for 60+ ticks, skips
+#their tick under load. Wakes on player interaction or neighbor change.
+[block_entity_sleep]
+	#Enable block entity sleep optimization. Default: true.
+	enabled = true
+
+#Stream Replacement — replaces stream-based flag checking in GoalSelector
+#with indexed loops. Avoids Stream/Iterator allocation on every AI tick.
+#Reduces GC pressure under heavy mob load.
+[stream_replacement]
+	#Enable stream replacement optimization. Default: true.
+	enabled = true
+
+#Fast Raycast — optimizes block raycasting (clip()) by skipping
+#blockstate lookups for air-only chunk sections and terminating early
+#when the ray leaves loaded chunks. Helps with mob line-of-sight checks.
+[fast_raycast]
+	#Enable fast raycast optimization. Default: true.
+	enabled = true
+
+#Entity Tracker Optimization — only sends tracking updates when entity
+#position delta exceeds 0.5 blocks or rotation changes by >5 degrees.
+#Reduces unnecessary network packets for stationary entities.
+[entity_tracker_opt]
+	#Enable entity tracker optimization. Default: true.
+	enabled = true
+
+#Marker Skip — skips full tick for armor stands with isMarker() == true.
+#Also skips area effect clouds that are expired or invisible.
+#Marker armor stands are commonly used for holograms and decoration.
+[marker_skip]
+	#Enable marker armor stand skip optimization. Default: true.
+	enabled = true
+
+#VoxelShape Optimization — caches results of Shapes.or() and Shapes.join()
+#for frequently combined shapes. Uses a small LRU cache (64 entries)
+#keyed by identity hash of both input shapes.
+[voxel_shape_opt]
+	#Enable voxel shape cache optimization. Default: true.
+	enabled = true
+
+#Sensor Optimization — replaces stream-based sensor iteration with indexed
+#loop. Skips sensors that haven't had their cooldown expire.
+#Reduces overhead in SensorManager tick for entities with many sensors.
+[sensor_opt]
+	#Enable sensor optimization. Default: true.
+	enabled = true
+
+#POI Optimization — caches POI lookup results for 40 ticks.
+#Villagers querying the same POI type in the same chunk section get
+#cached results, reducing redundant spatial queries.
+[poi_opt]
+	#Enable POI lookup cache optimization. Default: true.
+	enabled = true
+
+#World Border Cache — caches the border AABB and collision shape.
+#Only recomputes when border size actually changes. Avoids redundant
+#shape allocation when many entities check border collision per tick.
+[world_border_cache]
+	#Enable world border cache optimization. Default: true.
+	enabled = true
+
+#Fluid State Flag Cache — caches isEmpty() result on FluidState.
+#Eliminates vtable dispatch on every isEmpty() call.
+[fluid_state_flag]
+	#Enable fluid state flag caching. Default: true.
+	enabled = true
+
+#Piston Shape Reuse — caches VoxelShapes used during piston checks.
+#Piston mechanics recalculate shapes repeatedly for the same configuration.
+[piston_shape_reuse]
+	#Enable piston shape reuse optimization. Default: true.
+	enabled = true
+
+#Async Logger — configures Log4j2 AsyncAppender for server logging.
+#Prevents logging I/O from blocking the server thread.
+[async_logger]
+	#Enable async logger optimization. Default: true.
+	enabled = true
+
+#Sprint Particle Skip — skips sprinting particle computation for
+#entities not tracked by any player.
+[sprint_particle_skip]
+	#Enable sprint particle skip optimization. Default: true.
+	enabled = true
+
+#Dragon Pattern Optimization — caches pattern match results for
+#ender dragon exit portal detection during dragon fights.
+[dragon_pattern_opt]
+	#Enable dragon pattern optimization. Default: true.
+	enabled = true
+
+#Fast GetChunk — fast-path for getChunk() when chunk is already loaded.
+#Skips lock acquisition and goes straight to a last-chunk cache.
+[fast_get_chunk]
+	#Enable fast getChunk optimization. Default: true.
+	enabled = true
+
+#Heightmap Optimization — updates all heightmaps in a single pass
+#when setting a block, instead of iterating heightmap types separately.
+[heightmap_opt]
+	#Enable heightmap optimization. Default: true.
+	enabled = true
+
+#Game Event Optimization — skips game event dispatch when no sculk
+#sensors are within range. Checks listener count before iterating.
+[game_event_opt]
+	#Enable game event optimization. Default: true.
+	enabled = true
+
+#Temperature Cache — caches biome temperature as a final field.
+#Biome temperature is constant so per-call recalculation is wasteful.
+[temperature_cache]
+	#Enable temperature cache optimization. Default: true.
+	enabled = true
+
+#Tick Scheduler Packing — optimizes priority+subTickOrder packing
+#using bit shift operations instead of comparator chains.
+[tick_scheduler_opt]
+	#Enable tick scheduler packing optimization. Default: true.
+	enabled = true
+
+#Density Function Optimization — caches density function evaluation
+#results for repeated queries at the same position during worldgen.
+[density_function_opt]
+	#Enable density function optimization. Default: true.
+	enabled = true
+
+#Chunk Serializer Optimization — pre-allocates buffers for chunk
+#serialization to reduce GC pressure via ThreadLocal buffer pool.
+[chunk_serializer_opt]
+	#Enable chunk serializer optimization. Default: true.
+	enabled = true
+
+#No-Tick View Distance — sends chunks beyond simulation distance
+#as view-only (no ticking). Extends effective view range cheaply.
+[no_tick_view_distance]
+	#Enable no-tick view distance. Default: true.
+	enabled = true
+
+#Property Map Deduplication — deduplicates blockstate property value maps.
+#Many states share identical property sets. Interns them to save memory.
+[property_map_dedup]
+	#Enable property map deduplication. Default: true.
+	enabled = true
+
+#Inactive Goal Disable — completely disables goal evaluation for
+#fully inactive entities beyond activation range under CRITICAL load.
+[inactive_goal_disable]
+	#Enable inactive goal disable optimization. Default: true.
+	enabled = true
+
+#Dirt Spread Optimization — skips grass block random tick when
+#light level >= 9 and all 4 cardinal neighbors are already grass.
+#Eliminates redundant block lookups for stable grass.
+[dirt_spread_opt]
+	#Enable dirt spread optimization. Default: true.
+	enabled = true
+
+#Inline GetBlockState — adds a fast-path to LevelChunk.getBlockState()
+#that checks the last-accessed chunk section first before doing the full
+#section index calculation. Consecutive lookups in the same Y section are
+#significantly faster.
+[inline_get_block_state]
+	#Enable inline getBlockState fast-path. Default: true.
+	enabled = true
+
+#Collision No-Load — returns empty collisions when the checked position
+#is in an unloaded chunk, instead of triggering a synchronous chunk load.
+#Prevents lag spikes from entity AI near world edges.
+[collision_no_load]
+	#Enable collision no-load optimization. Default: true.
+	enabled = true
+
+#Pathfinder Stream Optimization — replaces stream-based node processing
+#in PathFinder.findPath() with indexed loops. Avoids Iterator/Stream
+#allocations in the hot pathfinding loop.
+[pathfinder_stream_opt]
+	#Enable pathfinder stream optimization. Default: true.
+	enabled = true
+
+#Goal Flag Bitfield — replaces EnumSet-based flag tracking in GoalSelector
+#with a simple int bitfield for faster flag intersection/union checks.
+#Goal.Flag has only 3 values, so an int bitfield is sufficient.
+[goal_flag_bitfield]
+	#Enable goal flag bitfield optimization. Default: true.
+	enabled = true
+
+#Fast Random — uses ThreadLocalRandom instead of the world's shared
+#RandomSource for spawn position selection. Avoids contention on the
+#shared random under heavy spawning load.
+[fast_random]
+	#Enable fast random for spawn positions. Default: true.
+	enabled = true
+
+#Projectile Collision Skip — skips entity collision checks between
+#projectiles. Projectiles never collide with each other in vanilla,
+#so checking is wasted work in dense combat scenarios.
+[projectile_collision_skip]
+	#Enable projectile collision skip. Default: true.
+	enabled = true
+
+#Suffocation Rate Limit — rate-limits the isInWall() suffocation check
+#to every 10 ticks instead of every tick. The block shape lookup is
+#expensive and suffocation damage is 1 HP/sec anyway.
+[suffocation_rate_limit]
+	#Enable suffocation rate limiting. Default: true.
+	enabled = true
+
+#BlockPos Cache — provides a thread-local pool of 8 MutableBlockPos
+#instances for hot-path reuse. Reduces GC pressure from frequent
+#MutableBlockPos allocation in block lookups and neighbor iteration.
+[block_pos_cache]
+	#Enable BlockPos instance caching. Default: true.
+	enabled = true
+
+#Block Collision Timeout — safety valve that terminates runaway
+#block collision iteration. Some mods (e.g. Alex's Caves) expand
+#the collision AABB to enormous regions, causing the cursor loop
+#in BlockCollisions.computeNext() to iterate millions of positions
+#and freeze the server. This limits both iteration count and wall-clock time.
+[block_collision_timeout]
+	#Enable the block collision timeout safety valve. Default: true.
+	enabled = true
+	#Maximum cursor iterations before terminating collision search.
+	#Normal collisions use 27-500 iterations. 10000 covers a 21x21x21 volume.
+	#Range: 1000-1000000. Default: 10000.
+	#Range: 1000 ~ 1000000
+	maxIterations = 10000
+	#Maximum wall-clock time (ms) before terminating collision search.
+	#Checked every 256 iterations. Range: 1-100. Default: 5.
+	#Range: 1 ~ 100
+	maxTimeMs = 5
+
+#Ray Trace Timeout — safety valve that terminates oversized ray-traces
+#in Level.clip(). Some mods (e.g. Ice and Fire) create entities whose AI
+#calls clip() with start/end vectors hundreds of blocks apart, causing
+#traverseBlocks() to iterate millions of positions and freeze the server.
+[ray_trace_timeout]
+	#Enable the ray trace timeout safety valve. Default: true.
+	enabled = true
+	#Maximum ray-trace distance in blocks for non-player entity picks.
+	#Normal mob AI: 3-20 blocks. Guard Villagers: ~16 blocks.
+	#Players are not affected by this cap.
+	#Range: 16-1024. Default: 32.
+	#Range: 16 ~ 1024
+	maxDistance = 32
+

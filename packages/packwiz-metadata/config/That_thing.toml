@@ -1,0 +1,39 @@
+
+[General]
+	#Frequency of That Thing spawning
+	"Spawn Chance" = 0.3
+	#Chance for structures to generate
+	"Structure generation frequency" = 0.5
+	#should That Thing change Do Mob Spawning gamerule
+	"Change gamerule" = false
+	#minimum amount of ticks That Thing will chase you
+	"minimum chase time" = 1200.0
+	#Amount of ticks that thing will leave you alone
+	"leave time" = 72000.0
+	#message that appears after beating that thing telling for how long it will leave
+	"leave message" = "That Thing has left for 3 days..."
+	#amount of ticks before that thing despawns
+	"despawn time" = 3000.0
+	#set to false if you don't want to be teleported to a special location
+	minigame = true
+	#minigame teleport chance
+	"chance that thing sends you to the minigame upon catching you instead of killing you on the spot" = 0.5
+	#maximum amount of ticks That Thing will chase you
+	"maximum chase time" = 1800.0
+	#time in ticks before that thing will have a chance to instantly go for the closest player upon spawning
+	"time before unprovoked attacks" = 168000.0
+	#should that thing immediately attack the closest player upon spawning 
+	"attack without provocation" = true
+	#chance for that thing to hunt down the player  immediately after spawning
+	"attack without provocation chance" = 0.1
+	#set to true if you want old boss music
+	"old boss music" = false
+	#if that thing should kill wildlife
+	"kill wildlife" = false
+	#should that thing ambush you from behind
+	ambush = true
+	#chance for that thing to ambush you from behind upon giving up the chase
+	"ambush chance" = 0.2
+	#speed at which that thing chases you after obtaining the key in the maze
+	"post key creation speed" = 0.32
+

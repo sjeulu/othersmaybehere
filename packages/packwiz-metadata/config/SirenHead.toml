@@ -1,0 +1,7 @@
+
+[General]
+	#Should siren head break leaves | reduces spawn frequency in dense forested areas
+	"Break leaves" = true
+	#Should Siren Head cause some destruction while doing melee attacks(won't destroy chests)
+	"Destroy Blocks wwith melee" = true
+

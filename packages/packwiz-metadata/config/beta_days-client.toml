@@ -1,0 +1,15 @@
+
+#Beta Days - Clientside configuration
+# IF YOU ARE LOOKING FOR GAMEPLAY CHANGES, THEY ARE IN THE WORLD FOLDER.
+[client]
+	#Displays your Minecraft version at the top of screen when in game.
+	oldIngameVersion = false
+	#Removes the dense environmental fog from the Nether dimension, pushing back to the end of render distance
+	disableNetherFog = false
+	#Enable custom dimension entry messages. (Vanilla Dimensions)
+	customDimensionMessages = false
+	#Enable the classic menu. (May cause mod compatibility issues when used with other menu mods)
+	enableClassicMenu = false
+	#Disable the 1.9+ combat sounds.
+	disableCombatSounds = false
+

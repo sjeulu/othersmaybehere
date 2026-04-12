@@ -1,0 +1,13 @@
+name = "Classic Sword Blocking"
+filename = "ClassicSwordBlocking-1.20-1.0.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7edc3e9c29764b270639cd569abee79e758e9e86"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5010430
+project-id = 817061
