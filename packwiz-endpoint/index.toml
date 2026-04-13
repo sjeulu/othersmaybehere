@@ -1021,10 +1021,6 @@ file = "config/zombieawareness/PlayerRulesAndLists.toml"
 hash = "0c9cb7ce493414f2a4b846417db297b8c24ec9950e5e2630d1cfff387568f5ae"
 
 [[files]]
-file = "default.nix"
-hash = "6583a90b8dcf5fdc163297fa9c25c321a9bc5e75a95e2460a7355231f492c2e3"
-
-[[files]]
 file = "defaultconfigs/computercraft-server.toml"
 hash = "66617095cde5743813584808395cdcd87801f843612a6db240dc12b40098fde2"
 
@@ -1063,10 +1059,6 @@ hash = "fceb05b7fe5682f3998065c58bde890830027926742916446dacea96cf92daf5"
 [[files]]
 file = "global_packs/required_data/tuning/pack.mcmeta"
 hash = "ce9b793426cd53b2c56bed1e4f472f21e35b8690d1f0dce88c18ac91d882cee7"
-
-[[files]]
-file = "icon.png"
-hash = "9c0a6cb34c5f4fec77e19c5f02eedbf8e4dc1dbbf3660aec12717f0f2b0569e4"
 
 [[files]]
 file = "instance.json"
@@ -1837,898 +1829,6 @@ file = "lightspeed-cache/1.20.1/namespaces/zombieawareness1.20.1-1.13.1-zombieaw
 hash = "0603fb6ca5940684dcd4504d63d7eb39df99c835253ea8ef1e2bc69c01dac93a"
 
 [[files]]
-file = "modernfix/structureCacheV1/advancedperipherals_villages_scientist_plains_c88f87e17a.nbt"
-hash = "eec6f32e08526ea3b5f53ce6f7d70c3a9796a0306e084f80beeb6b7e0219286c"
-
-[[files]]
-file = "modernfix/structureCacheV1/advancedperipherals_villages_scientist_savanna_7dcd28536d.nbt"
-hash = "34beaf60956e89e9cc26d160f169247b1adb85d646dc6e117fc572d7839ec2cf"
-
-[[files]]
-file = "modernfix/structureCacheV1/ashes1ashes_beta_55a921ffc6.nbt"
-hash = "23744c4569181b8d1f14f392d50153680b5ed361741bb0da8d7f83d7f42d8954"
-
-[[files]]
-file = "modernfix/structureCacheV1/ashes1ashes_cruz_da2218fabb.nbt"
-hash = "d34210272414f54029a0ad92d8876951acfe3be56a8b763bb06a29058ebb8c38"
-
-[[files]]
-file = "modernfix/structureCacheV1/ashes1ashes_maze2_f503003e53.nbt"
-hash = "4cc05b3e11b0c59e337be46a189c40942b0d242ea730a70a46dc67684509a670"
-
-[[files]]
-file = "modernfix/structureCacheV1/ashes1ashes_pasillos_6f59a15a4a.nbt"
-hash = "3b4c9e914c76b8c8a30f810ed019de3798a7f47a8b549d058aeceb60bb906213"
-
-[[files]]
-file = "modernfix/structureCacheV1/ashes1ashes_pueblo2_8be5abe44d.nbt"
-hash = "4113bc88ea9b66c2ad27e8c09fef45020466f71daa410a554f7f0f42aac5f641"
-
-[[files]]
-file = "modernfix/structureCacheV1/ashes1ashes_pueblo_f78e61d421.nbt"
-hash = "00f5b27d95572aec93ab8fdc87aed5de28b4d196e30995db0343d6e50bafd61b"
-
-[[files]]
-file = "modernfix/structureCacheV1/ashes1ashes_sonido1_b3492fdd9f.nbt"
-hash = "1cb7acee1986700ce94b64c45be20b5c0c8af3e33c745e7eb6da2c0c40aefcba"
-
-[[files]]
-file = "modernfix/structureCacheV1/ashes1ashes_sonido4_f78d9eae43.nbt"
-hash = "678af5c051c10381e7caeb9788ab10befb07462f376d01a3e9ed2f960a8ea9be"
-
-[[files]]
-file = "modernfix/structureCacheV1/ashes1ashes_sonido5_98a27c259b.nbt"
-hash = "500c5c8523627e0e3bb2de9250db824393ff7d5f625d07282e97ab4f50b85917"
-
-[[files]]
-file = "modernfix/structureCacheV1/ashes1ashes_squid_0b7a30b8fd.nbt"
-hash = "fd4a993bc4537b0a1d1788144c4f2d8213786719c4dea5c755d32135e59df04f"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_abandoned_garden_4_7d02049495.nbt"
-hash = "83a9cbac816040928d12f17d852ea525602719d3d9588f258c31c94d8af5b808"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_abandoned_garden_7_39c78bb582.nbt"
-hash = "a643cbfcea7892e17f34cc7f061fac8e7d61e8adead4977d166b37ff850be20c"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_abandoned_garden_8_a2a5ab3c62.nbt"
-hash = "6101c26358eb213e0df23556a1adfbcdffef532bc7b34ec598947fa687f057ab"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_abandoned_garden_af070e85dd.nbt"
-hash = "fc2671a66732e28b0f3a1114b8864df67532e5b4e68024e8c846a09c376b5bc8"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_abandoned_house_1_7f10797f31.nbt"
-hash = "385a3377070c7d68e079bdbb43cbda08834c934fa33d4b8be8e5b75d33e7d5ec"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_abandoned_house_2_a7e305b803.nbt"
-hash = "d323dfdc0ea04d04cee6bacc1ca21584e6ddbddef61783e1211eeac8aaf3c06b"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_abandoned_house_4_5efcb78c11.nbt"
-hash = "0c9722ee2651f553d6ca0bcd564b725c7cd65aa8e2f700c7fcf012a08f4d34dd"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_abandoned_house_5_6102bf7348.nbt"
-hash = "574cb1110ecfd3d7246ca23754a78fd1284a47452d98cfe3fa8ed5250fc82229"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_abandoned_house_6_8e3e00234e.nbt"
-hash = "3b8e4b4352799f1383da22abcf7bbbbdb30925366c6c46cd5bbf76d04cf3b062"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_abandoned_house_940b1e3c73.nbt"
-hash = "3c68f4282fca5d6b8f1e110f89b07a4bfaba67705e3a0eb647a7e01acc2f221a"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_abandoned_quarry_f31a5c481a.nbt"
-hash = "a150ceec1111b6d43cfdbf3be5205c068ac9a8eb077d6d20f8dbc3eef1cf6ac5"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_lost_wagon_1_fb8dd576d6.nbt"
-hash = "48321de7208dadebf0d1a385afb95f4b1af3e55972f7de73ff558b4323808eee"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_lost_wagon_e73d6ce0e0.nbt"
-hash = "1c75e9c246d273472265c8188965d1f337fb0535449160bd0b351e4f47726f62"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_ruined_aqueduct_2_e607a41ae4.nbt"
-hash = "a1b89f338afa80608c4f66e022cdb682619ffdc3a133914251bf6abbe4032d0f"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_ruined_aqueduct_f9cd73e5fd.nbt"
-hash = "1a1ccf6cb7e764dfe858cac2355d670ab9ca5511523dcc604b8061e52a9627c1"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_ruined_monument_1_13e7cfa541.nbt"
-hash = "32487d0dfdde9bc58a261ad732143354a94161ee38543edca1fc1fa2e939f81d"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_ruined_monument_2_cd9c8b34d7.nbt"
-hash = "43535a807222d11df12a99360a1a15e758c9a3b60d0f09cecc629453b135c3a0"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_ruined_monument_78bb8b93ea.nbt"
-hash = "ee1e938705122b47e798e3fd8aad2352c63298898f534d5a92fa8ca83b718b7a"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_ruined_sanctuary_1_81f0085ff6.nbt"
-hash = "8048f2a62f4c51083bd0dd66b2afe65c2e812422a5ae7d8dc0a048e7181b5e25"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_ruined_sanctuary_28d41455fe.nbt"
-hash = "5fb3fc2edaeffeb42d736b3c2feb8ee27c37ed0aec129375466c382692ec0546"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_ruined_sanctuary_2_ebe807e6b4.nbt"
-hash = "e72785d0cc0f2d664d3dc78f728455faa833243d30023c9a48a548a7f8a2e092"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_ruined_tower_1_41b807bd63.nbt"
-hash = "18541e4713c3a34138e886ecb2a36edb254d03ffbb03db5ebb7fe4d2b88a2807"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_ruined_tower_5_9128c606fc.nbt"
-hash = "bc624fb5f7420691f8107da4a238e1d910b67a144186694c5ae03a38f6b5d445"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_ruined_tower_6_1e05a41191.nbt"
-hash = "58e12ed6df13e350f8bd7f5319d7aa1357e415f7671a89df155f010de10ab489"
-
-[[files]]
-file = "modernfix/structureCacheV1/dungeons_adventures_ruined_tower_bb39e7487e.nbt"
-hash = "7318f85f72d423e93759aefd198f4761fe8ebf1c7be65b23680b75e1b5b79fcc"
-
-[[files]]
-file = "modernfix/structureCacheV1/mojangsecurityentity_cube_8e9372e391.nbt"
-hash = "5f509192847d60bf95df10385ff3afc220dfae3d10609d35310a6cdcfe1f8db0"
-
-[[files]]
-file = "modernfix/structureCacheV1/mojangsecurityentity_dirttower_f5f82a50d7.nbt"
-hash = "5444dbc7c0139cb93ae59b2bc4701d532725d9d38f34e61314d7c8b3e8382976"
-
-[[files]]
-file = "modernfix/structureCacheV1/mojangsecurityentity_dirttowerhigh_1b4a530525.nbt"
-hash = "15d99cdbd176f4f356561fc2d0dddae705cd97df5775b0acd1c332e2475eb9f2"
-
-[[files]]
-file = "modernfix/structureCacheV1/mojangsecurityentity_dirttowermedium_f67a326aef.nbt"
-hash = "442af5940c886cfbdce1af639c23c382685a8a591907be16a5aafd4a9b0c2cb3"
-
-[[files]]
-file = "modernfix/structureCacheV1/mojangsecurityentity_gone_1e7b7cc95a.nbt"
-hash = "367f0837bdd810b3e92f34be442ef28a0048268b4106af05787197b0b6bbffa3"
-
-[[files]]
-file = "modernfix/structureCacheV1/mojangsecurityentity_largeflatcube_aaf70a4eef.nbt"
-hash = "2d2e9d9b47c09b68ee43a00bcd929f8781fc49e30d78fbfc985fb8afd50803b7"
-
-[[files]]
-file = "modernfix/structureCacheV1/mojangsecurityentity_podiums_47d63e1f86.nbt"
-hash = "78e11ed7393776bf3736f9c89dee72c6ca8c84d5d026ad752e52b452268c94cb"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_big_ice_spike_1_84a944224e.nbt"
-hash = "2def74ea782bff3bce17788720095c8fcb8a7bb4853144b6c1b7f2e13b7d43cc"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_big_ice_spike_2_4e80c6c10d.nbt"
-hash = "7071be73af473e1d07c65e52ddb5ccf57818a434cc39cff21d40afd53f2851ca"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_big_obsidian_spike_1_7ece60bf08.nbt"
-hash = "175edd2d74e0c48dcf78abc01b2e527effb5d6707453aee090ba5258abeaaab8"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_big_obsidian_spike_2_2e80f48f80.nbt"
-hash = "af5ba2c0ac4ca50f722a34e44ead2e82e6f71a23cc7ff94d104cec17460dec2d"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_big_travel_hideout_17ee1acda8.nbt"
-hash = "29eb2d9e78b840a43050aef45ba6bf457acb4166918d77e86914c5e68b37ad3e"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_big_travel_hideout_abbandon_8e505734f0.nbt"
-hash = "78d3e198daec92ec02b94f7e0bfaff00b3e04530b16d17772c7fa7919a035c48"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_calcite_blob_1_51ab30a8c0.nbt"
-hash = "230cc1292f05c8cadbc7b65aff851ffea53bfb49e5218b44b60907452d7d0be0"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_catacomb_41213873a0.nbt"
-hash = "4b0ad7a3c31886c254a0ba6c578af3782e35766c1c7f4d0a809ef0f1dd239820"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_chest_dungeon_35e8aea95c.nbt"
-hash = "9841052dec8d4d3710217ae25f5dcb4b37ef2680cde5c3f15f4ffa40cd4ce8f7"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_chest_dungeon_desert_d29d31366a.nbt"
-hash = "78da774c328b279be274ce7106b4ae691e277f15ed5f9b7a73127d415f11e97f"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_chest_dungeon_jungle_3210f443fd.nbt"
-hash = "6889e5a6aa98f8eb1415177b5f6351b39105fcdee56b62b8beb8fc377de1843a"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_coal_blob_1_8d8e3e9060.nbt"
-hash = "c9bc83510310897cdd21e11865f22142a30262b7dfce18bd6509a0797e30dc4f"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_coal_blob_2_048bae9dc8.nbt"
-hash = "82e87e384ab11e6cb57a3817c0291303231bf3fc34ea320d043656da435d70f4"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_copper_blob_1_e24c368f02.nbt"
-hash = "75704a270c6877219661eaf8a3e5314eb5c5c2fa3622a2663b9172429c63297e"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_copper_blob_2_c0c1459a13.nbt"
-hash = "3ddc11756b6e41bbbe712693c62f9050c8d25fcef1c3eb3ae19fca2b0472f497"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_creepy_road_1_c3eae9b9f1.nbt"
-hash = "072dc14b9104b38c356d425d19b22013b29bef2cb2d39db1d6c1f807b64b5c74"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_creepy_road_2_68774d494c.nbt"
-hash = "df538b20eea778d83a4ef42036bed8a593461a22922cdf6f406f4293b7b5fa55"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_creepy_road_3_0a4e36db40.nbt"
-hash = "d053a56bcbe4a062aed7556757d9393a36298ddc94c25fa2aadda9e217370bfe"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_creepy_road_4_c3eae9b9f1.nbt"
-hash = "072dc14b9104b38c356d425d19b22013b29bef2cb2d39db1d6c1f807b64b5c74"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_danger_chest_70a9061f5c.nbt"
-hash = "37d45928aba4971c6e8d97c31fd3ac05d037ff4cdf813ce5de8ba7eab68d425e"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_deep_fossil_fragment_1_ad3d05970e.nbt"
-hash = "5bef5904bc21f051e4a2ee31aab3eca8e5e9fc11f9636e5a41239d19cc0367eb"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_deep_fossil_fragment_2_1c90f5fb4a.nbt"
-hash = "3a6267bfb5c646d58e8a9dd1ead0228b395ae2c7933c9bd43a36c24e16e8e823"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_deep_fossil_fragment_3_930eff07b3.nbt"
-hash = "7df00f1546e802fad8ae2de83fda6b71b238872d5851eb78eb124bb5775b744b"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_deep_fossil_fragment_4_898bc65ab7.nbt"
-hash = "435c402c1af5144055f4e32bcd35d67174109cfb784cf862a9af98ad779e288f"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_deep_fossil_fragment_5_f278a59870.nbt"
-hash = "4f03ece367ece5491d9df774a15e813f15d90e97f1f622df1cb09e4512926689"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_deep_fossil_fragment_6_caafa0f21d.nbt"
-hash = "a3417951f36ada14cb38b8c32d08ee3817d90bdbc3e313dacb07c717104fcad6"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_deep_fossil_fragment_7_2787de0986.nbt"
-hash = "50309078f921bbb54ad9cf3916be006d2af08e228c1de9ed20a74166f62e9d49"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_deep_fossil_fragment_8_f39efeeefc.nbt"
-hash = "529ca1f0d2647a567cf7347b63d6fa791855542ddae2406cc04410f4fb2bc1d8"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_deep_fossil_fragment_9_22fa91e197.nbt"
-hash = "85b37a818e19af86df470c911228c17e3bbc21d8a9f9ffe3977a4a4b8389926b"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_desert_tomb_1_32e16e16fd.nbt"
-hash = "7078e8300d2db6b101cb536015395e1958a92fde2f6c1a61c5623c863ad9512f"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_dungeon_desert_husk_7669dff90c.nbt"
-hash = "98c8691880755028d4f94dc218bfa689de0d843ac7c0f9ce5bcf9da48fc897a7"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_dungeon_drowned_5f28a7665e.nbt"
-hash = "3cccdf983584240062bbee3873844be4a89b54bc655c6a4dd5f3632db2446ef8"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_dungeon_ice_stray_acbac9daa6.nbt"
-hash = "0d18fdda400d5f7f0f549f471d282719d855540083a789c5141ba9b9d53f1b27"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_end_shrine_b1a308a935.nbt"
-hash = "ddb3562c41dcb0c4b6fa1a8e7e5a6e4ea8f9f74b704ff9682e6882e756a92a73"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_entrance_1_b02a826bb4.nbt"
-hash = "256f5f84f7db0a877be92dafeb6543d5421787858134db4162260df59b79130c"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_entrance_3_cb17ef87ef.nbt"
-hash = "0a63e9ca490be3fcd3f2f94e89185ffd7d3f3574f8486e0015f881172387b716"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_fake_end_portal_d1ed37ea98.nbt"
-hash = "b3d061331fe78032f1432cb5c83b5f15f0bdfb20dfde9aee5b4b5b6572c287b8"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_fake_end_portal_deepslate_86c3409cf0.nbt"
-hash = "3afc29ffa76c9af073c2991bffbd245285a1f4c1a2b411815bace1988dac2ce9"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_fossil_fragment_1_a20e34380c.nbt"
-hash = "89f35522a1c8354d4c402a405ce5f535b06be5d93933d4b4b74b4b3119dbc0f6"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_fossil_fragment_2_1ad274f497.nbt"
-hash = "34d0b3f7c5107363fc5198f5f155a07810b0b0a451109e3d16963942480f163b"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_fossil_fragment_3_29ffda7f2a.nbt"
-hash = "0aea9c61f50805e5a5d5c070967546f37d3ea0a932a07e4a7deae4df37c7cd3b"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_fossil_fragment_4_8c5ef55925.nbt"
-hash = "4f1fafe449b68c4d733d9a3513fa0d18d850201530e50a2edfe784093bddaad6"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_fossil_fragment_5_525eacdfb8.nbt"
-hash = "997d3ada9f073543e3ecb450bab96cef07d9252acf60240e1a596e3ea0e49607"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_fossil_fragment_6_b9c63a223d.nbt"
-hash = "a8644af0e9975baf194d0bfdfb68fb2cd8453985d06186302f83f741bf0d3935"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_fossil_fragment_7_ee5d7d4d45.nbt"
-hash = "0bda7f5b898954d7c2558322bc798ef90c93a043f3f66d76490927afc2c8af9c"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_fossil_fragment_8_7045aae1db.nbt"
-hash = "1727f2eec67cca7faa11bd20fd68534c1ad73557a0f02be9a086b5021029c332"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_fossil_fragment_9_f93ab6dff4.nbt"
-hash = "218b276178223e9f768eb1fafd573c30a52402ae3c825e25be73bb5ad65d092d"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_fossil_hut_1_59e3600583.nbt"
-hash = "5e1dcb416fb76dddc0878e6a5d04885bd602409f8512e46e8bcbd8ed0b455fd4"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_fossil_hut_2_c45aeaeece.nbt"
-hash = "53c88de96755bda87f86d9ef2217cfe706af940b27271a26fa7c452bdb6e954f"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_gold_blob_1_f1a53c325a.nbt"
-hash = "ba00c9215897cfbf158ba338bd424a7aa44882e7b9b737df2d5734bfbf74fb68"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_gold_blob_2_af8c3baf7e.nbt"
-hash = "d981a208a315e9af5c91d52529393bbdc54ab7f9d3c35a42099cd139c5c5fd47"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_ice_blob_1_0a9a49125e.nbt"
-hash = "ac7ccf5167279346c3dfdf5c02b4375765c4d2908628d83a51520bb1ac53c9ca"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_ice_blob_2_614c9bc8da.nbt"
-hash = "716442014c1d79e45a158751bced816cfba83951eaaf2546acec3e9502945bbb"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_ice_cluster_1_a8b51970c0.nbt"
-hash = "64543418120aeb208c7660d52dc50c92bbc1cff3a16008fac94f256253c604bf"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_ice_spike_1_e6e250b9a4.nbt"
-hash = "18515f35abd0be5c0daefcc3cc8f1e2a687ebc099aebca16dbf1a90be2dcb69a"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_ice_spike_2_1002b5a980.nbt"
-hash = "455a62b151089130fbbab2a9ae7c8b7498fe7b7144b85190128dfc43c5a90335"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_ice_spike_3_7d70e439c1.nbt"
-hash = "7243de726fae1a1460c856a7e3a975485e18025d46dd3065ff34e9fdfebd8f77"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_ice_spike_4_e33f25377e.nbt"
-hash = "e6a7ce51f1bcdf025fe64518ef3313e3fcd129e1e5505e210048eb7b84b1bc03"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_iron_blob_1_2d958d4952.nbt"
-hash = "8ba0c9b94d8707c4cbb1f18bca5b9ca089b2931a3251b50bb57645b8a3f807d1"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_iron_blob_2_0696003be8.nbt"
-hash = "759404e6fc6bf9ad67d7dd8e0554b57621f90b937b80094f32c22b93bfa9685b"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_mamga_blob_1_f82a83c743.nbt"
-hash = "5edc64f92c2ab1630996023141e6594d12efaf071d34403c63ac06e7512f37e9"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_mamga_blob_2_79bb9fa797.nbt"
-hash = "cce1cba51934e9e75503ac4016423595ff39afdb666b328e5b34eea0d4ce8e4b"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_nether_pirimide_1_866756370e.nbt"
-hash = "3bb947cd43f9116a72e54d7be0a7021020044531e2e3a01096071283b019677e"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_nether_shrine_449e7afa0e.nbt"
-hash = "a8d325d574cbfc965f48328c1a5e2d847df07a7f775dbee6557847419668959e"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_obsidian_cluster_1_c9fc5aaea6.nbt"
-hash = "1616285a8c68813b3e83ce4920feecbc9d7fb1727220fefb91526e4bc602a4f6"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_obsidian_spike_1_a0d0a4c32b.nbt"
-hash = "beee331f9c79d176a11adea7d0a946332d02a56543f6196d54182bed0ba584e5"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_obsidian_spike_2_ee1cc9104a.nbt"
-hash = "e083b2471a4ee1d404b5abcde944a55e54abfc31d70646a8c85f94e202ece9cf"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_obsidian_spike_3_afe9214f53.nbt"
-hash = "d9007f6237b33af277ae1a299c04054ade246d08a0316f999cd228aeaf33a1fb"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_obsidian_spike_4_0ed4b02fed.nbt"
-hash = "a09aa61c6e1aad1d1b4e7999864e6ec083e0f9c7b8c121155c2b2efcba1fd385"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_old_bed_5b112e627c.nbt"
-hash = "606d82e0fe7bb1ca8746963f9aa6245bdd782167302bd78437be5e50bb488930"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_smal_lava_cdbcc06ec5.nbt"
-hash = "8770b2ddf525036a30aa38e5272191ada2fc5827f0750c1553db477c492e527e"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_smal_water_6f6e67ae6f.nbt"
-hash = "6b982fe668161128eb56483911bc36f95393ffdd43664a8de7b58dd5dfff1e47"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_calcite_vein_1_228b8ba8dd.nbt"
-hash = "16a1572998d67d05f5f07eee1d5364747bab544576a07b4324acfc9c7ceb89cb"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_calcite_vein_2_45914f5b79.nbt"
-hash = "c6b31370c8c435ff2327a595dee896f5ef052d7d14b28a1650153947d09cd6d6"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_calcite_vein_3_d717200c1d.nbt"
-hash = "40f18d01e923b42aac6bb6514e8a8200df20126f1c46b3cab11649e46d64d10c"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_calcite_vein_4_285bf352ad.nbt"
-hash = "09c43a94408be42f7dbb566ec2af7b4f8b40f724a0bb3fdee9ef8ad6cb7e54fd"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_coal_vein_1_6920d5ff99.nbt"
-hash = "76682e7c8afed00ca783d35d14a7a0eb0ab0d6f01cdb6c0b22d83a7f9b2aaa7a"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_coal_vein_2_262aa2c956.nbt"
-hash = "c28a1c3dbaa04ee4412be6e67e65c1051039a8293ef17a47e7550e1d9601919b"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_coal_vein_3_122c489823.nbt"
-hash = "a4c6e6fa5666f92a277c3f1c8d4d4511cd604caae1b0b4af3febacec3eb981d2"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_coal_vein_4_adaa9c7036.nbt"
-hash = "f074d541c5438d7240223976335976a53731e49082ca10dbcd8c219cc29981f0"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_copper_vein_1_c1fc8cea29.nbt"
-hash = "957af0f92413dc3f43b16c037fb494eb0a4e4cd519d7d66258e39ad75e2c27dd"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_copper_vein_2_fae1cdef5a.nbt"
-hash = "42f51ae69533ebeab06e4261c1278fd93098e4483f7a914223556885e01bcdd9"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_copper_vein_3_e671b9fc1e.nbt"
-hash = "09673f762fa077d879e0f95a5f38a52f31789b1444cabb5963d8b1f82baa5288"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_copper_vein_4_ad170911bf.nbt"
-hash = "46b4f838653207f189fe4975d1929627171ff6d7e482aca49561e79a985caa6d"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_geo_1_e36de91b2a.nbt"
-hash = "74904a5a63d4e42f51ae663db3b33642432e5c835a1114f76dc7026fcbb3e51d"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_gold_vein_1_f278c3ca19.nbt"
-hash = "dbf00d15df00e0db9de9ed7d7ff70ae64801dd8849d3040a8f4cf4e0b20305b8"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_gold_vein_2_66d63a35cf.nbt"
-hash = "b972d0fdfd0be4e94f2483c74dd96c6e12df97e88058bfd5d3358f624cf94c3b"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_gold_vein_3_f143dc9a9f.nbt"
-hash = "ae8cb9f8e38cb7fb2b6ef2fcf52b5d69cdef2c5535335005871e6b269f273dbc"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_gold_vein_4_c1691009f6.nbt"
-hash = "0e98fc8f7bc1be8106ab651718ea8c493f5e447a7ba492f7fcd3db0990bda366"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_ice_vein_1_23fd826731.nbt"
-hash = "132a487f924f55f9ebcd28c574f1feae5b135d634915b2ed208f79353ce71b3b"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_ice_vein_2_8c41c8aca0.nbt"
-hash = "4660f893921a3f8d3592a58f6591f06c279bcf80d86ed32df1263bb5a20c2fec"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_ice_vein_3_2006e4a075.nbt"
-hash = "8f0f98e91aaf1d0d110f284432fe194c090428b5575600e392be54ef7f338a16"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_ice_vein_4_1bfe91ebed.nbt"
-hash = "bbd88c61edb6719f235dee354fc019c1573fc3262f9ccc6772bbf2868e5b5d94"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_iron_vein_1_9913cc63ea.nbt"
-hash = "d28ecbfe87c1b7aa59b20ecebeff4dd5cc7fb9c75413f3a3464ea186125b1f1e"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_iron_vein_2_6fea2274cf.nbt"
-hash = "e8452a2bd20764b834259acf9a3264d5b78a78e6ce5d137c459e1025e4b6159f"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_iron_vein_3_6894e9b893.nbt"
-hash = "2efc58970a446adb6ddcdf1281f11e3a0d91bf6018b8582bbaa186313ad755ad"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_iron_vein_4_ab79c81624.nbt"
-hash = "ed1c606fbd125989950a60db7604f0c1ea685420a2e8998f3d8be51e27dd37f1"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_magma_vein_1_e6808822d1.nbt"
-hash = "43b3647a3df9d7b6782b5920706d7c48a7fa2feda732ba6348528e6eb2a9cf0f"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_magma_vein_3_7477e7c7e0.nbt"
-hash = "8b83a5f111a6a04b979d61f239cb58783cd507f31f9c917ddee887c23ed2092b"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_magma_vein_4_0b8a2a4fda.nbt"
-hash = "accf48be48ca8fd12a0e52a2f9e18147a8c3dddc709817758001b01562ba6fb6"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_mamga_vein_2_21afc6234f.nbt"
-hash = "5f61bbb967b4c0bf0d40650290a788f6b5f06b307c00aa58c9ca37d110537202"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_travel_hideout_484d28e81a.nbt"
-hash = "96d216c197e891e968d595de6883a8a664b8a2df1ec511f85e604ce3909458ce"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_small_travel_hideout_abandon_9d8b16838a.nbt"
-hash = "1b77b9997e60811a165d894d96da0f0d3cf4255f295e4c3ac19165f0530cd0e7"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_stone_shrine_0c610e8aa6.nbt"
-hash = "b2e6cec28e7ca190f61c66ebfbdfebbf5a6c4bef85d82d3c0711d57c012d990f"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_tilted_ice_spike_1_03da58924a.nbt"
-hash = "504ae67a904d4d0d1502f5ca6830e14cfd82d3efdefe206eb58edca2554b417b"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_tilted_ice_spike_2_28d269f1fe.nbt"
-hash = "fe5695fa17b938ba75e3566d48977faad4eff3a7f716b49001265c26545c8316"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_tilted_obsidian_spike_1_24de3028c2.nbt"
-hash = "d8d0a624919375c5a1c7d165b5ca17b0ed4a615c5228aef406a518ce3c9cd377"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_tilted_obsidian_spike_2_25cb8352fa.nbt"
-hash = "19350666d24feb148d5be22708bd3d95c03123412cee889c386c3830312296ca"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_underground_well_f207a18cde.nbt"
-hash = "52999ec8eda55bede19653ad9e4aa57d00025d3b07dad43d6137d62510b0de97"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_zilverfish_dungeon_c42843f7fb.nbt"
-hash = "4765e9c0d86b0135d6eea800d23c9406a0db1a1833f9f30b344e92ddb4b05e93"
-
-[[files]]
-file = "modernfix/structureCacheV1/more_underground_structures_zombievillager_dungeon_fd0f2e7ef3.nbt"
-hash = "6e6a21cd22d4b343abfb3fd9be1c6af8115761afd8b8e8e9d143503533d7a240"
-
-[[files]]
-file = "modernfix/structureCacheV1/onrdsrexp_lost_wagon_2435ddcfb4.nbt"
-hash = "464f8d8648e860704c347cfb1db678b1a13096099c825c1792935459b76549f6"
-
-[[files]]
-file = "modernfix/structureCacheV1/onrdsrexp_ruined_monument_203e3fc6c4.nbt"
-hash = "4c16d2d031f77448669a504caba285a08ac964936e96285ecd397ac3040c019f"
-
-[[files]]
-file = "modernfix/structureCacheV1/onrdsrexp_ruined_tower_9dd64aca82.nbt"
-hash = "bcaf7899d0f39fe070573a603d18860f19dbcd95fc4deeb019a0b602925ed1af"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_a_castle_dungeon22_8ebee69082.nbt"
-hash = "27d90ad0e4c27eb3b803d39723e2e91323da6b75373263a5c494ac1514a75e12"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_a_castle_dungeon_1c847f4e34.nbt"
-hash = "46ec2bd2c5f9c16a3920abc3298592f02d049ce1f4714c86176f028db2433e6c"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_a_giant_libary22_e3b79a9961.nbt"
-hash = "51230e919bf97201b96ae5f312ac48413e41fb06dd40932f859ede3fa8673524"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_a_giant_libary_622ebd4d36.nbt"
-hash = "14419fba6a3d9844d696489f1c7453930560b22ca9da98e09cb20adac3b4ee42"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_a_giant_skull_c5809ca8be.nbt"
-hash = "b55dff6bfe7a54aeddc9d54a2f040e4e6c7b34ca8764ffcd11b6e92a163a115d"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_a_prison_neg_x_skel_spawn_407e65a082.nbt"
-hash = "d19d943195fdf959b126094fb0a60a3c281d7430bee26f4842b92013952a4da0"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_a_prison_neg_x_skell_spawn2_cebe8517da.nbt"
-hash = "a9ffb4732674aa0cfe23fd8d668e587fdef202b3ca26e0d7f3eaf3bbb46baf10"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_a_prison_neg_z2_45af639b5d.nbt"
-hash = "07e4396d5c92a028bd324378a9a67dc4e543b2a222086db42f231213da945717"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_a_prison_neg_z_0b4acabdfa.nbt"
-hash = "e8aa2597ec8359d29db13400343c19cc9f2aea6ce7e49ac169a2375cfa05974d"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_a_prison_pos_x_skel2_03d36fe4a7.nbt"
-hash = "ac416e16d8cea631ecf352260d084affff843063a3506ecab6e73911fd2b82af"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_a_prison_pos_x_skel_99d253aa5d.nbt"
-hash = "7fdb6e35634b1c7bd5458951f11002fbee5aa2f87bcf47cd8b0a3a1388d099f5"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_a_prison_pos_z2_1e18a1943a.nbt"
-hash = "3aa15e09f1a8416d96698dd5aea7035a8846a1cd1fbf77a461b7c6ec6e245f05"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_a_prison_pos_z_c386409576.nbt"
-hash = "f0d1ed047203cf9bfbf84d70d12ab9f0f9a84d609094a6e660b7fd10f284e600"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_brick_room_neg_x2_65781cbd54.nbt"
-hash = "ecf378f26d3ba7bd5573caccfedbf9c1ac6929abd6df2a754f20f81b6e5a5a95"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_brick_room_neg_x_80dfbf5e3a.nbt"
-hash = "8ffe57409b04e69036a842b96a0fc158b07fcc1342f354e5e69948371da0a546"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_brick_room_pos_x2_866f6223a2.nbt"
-hash = "859ad8bd3ae8e64783cc5a5d8ca20ffac6588d9add9b5c683d0bd605a287f83d"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_brick_room_pos_x3_afc8a7cb0c.nbt"
-hash = "37887b600faf47816c873982ddad64d67bbac75beeaa227c3a99bea43da4947f"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_brick_room_pos_x4_f9ff2913a2.nbt"
-hash = "4f00110d0852b28a428769c85ded4c8bcb749028ab6a138d92245de100c4b90a"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_brick_room_pos_x_73104554ce.nbt"
-hash = "1d159843773c9682d8f47db9061e37a72c2c6fb5b964e29f2fe473af9870011b"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_brick_room_pos_z2_fa9c39f35c.nbt"
-hash = "179e4c38f2b2cb01c5f4ec6e83f48303cb0f1beb85c3914ad35eeffb99aa2026"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_brick_room_pos_z_ac6ca6a6a1.nbt"
-hash = "74fad67ea4fe8203f3e276e908d46a20ac2e2aad6da65c803fc30c84d469ac17"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_castle_spanwer_main_dungeon_bef428573b.nbt"
-hash = "3e548dd5116d2f57ab98cbba202b08047c54f250698c7acd28da8662664f7776"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_flea_spwner1_708ed0d017.nbt"
-hash = "942b488c5a00b1c2f52546254bb63fa637653dd0fdc37ffa2015fafa8e2a8f01"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_house_main_dungeon_6db587ceed.nbt"
-hash = "773f8dba2e4b306af82a810aeb2b53e67c83a98f437c26c84a2da3f459eeccd9"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_lave_bridge_01daaee934.nbt"
-hash = "8aad147b4d37325aa617c5708482fefb844c346da9ef615d264c2886e63dcf21"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_lavebridge-2_108b8079e7.nbt"
-hash = "460ad9bc883191f69fc61a7b7387c9c9187d941415b289ba418abd017b840f6d"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_mineshaft_elbow_one_new_postive_z_99ee50a869.nbt"
-hash = "282eb8c4405fbf7f8515c1b8165eabbbe04f2884876a8360f7bf1408d2f96935"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_mineshaft_hole_postive_x_71c9f8531d.nbt"
-hash = "a0f1365e16efb631250b84bce6d60c70ade467f0b25f7c19cdd52beebd0d954d"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_mineshaft_longhall_new_f809a32c1e.nbt"
-hash = "00aa5e7d5646be059d3839387efddd5d5255cb15fec4dcf76c3fcab97b3f11e7"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_mineshaft_longhall_newpostivex_f809a32c1e.nbt"
-hash = "00aa5e7d5646be059d3839387efddd5d5255cb15fec4dcf76c3fcab97b3f11e7"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_pit20blocks_062118d1d6.nbt"
-hash = "7d30b4eb95845db3276b0ef0eebad161eb109e6cb03369178de0cb8a43436305"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_secret_room_pit_d2ece900eb.nbt"
-hash = "9c8d97011f262fb54fa5aa78445c7791c044f3d5380364c864508da462f520e0"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_skinnyhall-x2_a095fd53b6.nbt"
-hash = "12419163f9febb1d644e9f9da67b2e35da42e49d4b2efdc5ff24dff63431b6b4"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_skinnyhall-x3_a8798e1790.nbt"
-hash = "d113d96c114259d92ca2925c3d6e4a6f69af21d7316d4ed9ce490a41c9fc2908"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_skinnyhall-x_8557c33451.nbt"
-hash = "60421a013b1e2514d6f6cccd0e48a01ce2a1f436ffcdff7f84fa77ac051580e3"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_skinnyhall-z_242c5d32d8.nbt"
-hash = "6b0dfce37c877ba4e9adac6b91ddbfbbb2228506621ae90ad7dd02387318a195"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_skinnyhallpostive-z2_aa8984df3e.nbt"
-hash = "f413f73b1a921d47be788496ef614b3cc04af105e82251422c3ef63724f45665"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_skinnyhallpostive-z3_9283ad32a6.nbt"
-hash = "90f9fddd8baf71408a12d40991fbdbcfd4ddde56e01ef0d13b6e9dd3f98ac492"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_skinnyhallpostive_z_2762b8e11f.nbt"
-hash = "145e3a8e087b3d50c113a2572f4d676ec74a14e4e5965f1d4a4e0450f14a1b0d"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_statue_spawner_main_dungeons_cd2e70e2a5.nbt"
-hash = "c09348a29986362512b11087dc786d652c2e24d10632abf07c72efd7be63024a"
-
-[[files]]
-file = "modernfix/structureCacheV1/randomdungeon_villagehouse_spawner_main_dungeon_56cd975794.nbt"
-hash = "cd47f6c60641a391098d5cfa3383ba513696b29299782e3915df577ac86789dc"
-
-[[files]]
-file = "modernfix/structureCacheV1/the_masked_campsite_eb3ee77d7b.nbt"
-hash = "c7dab3fd038ea2e825fc6b1a5502b5c9717f8067aec9072c3f3847d46929cd52"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_leafless_grove_oak_birch_grove1_14611ca03b.nbt"
-hash = "b25c60c16e1f10bd13299637db6ea5170b799f92015efa9ab7bbfbfde6c87eb5"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_leafless_grove_oak_birch_grove2_d97dcab539.nbt"
-hash = "1f929f49bce24eb280a1f1903442a3f4743539078d58924200b2ec86d207193e"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_logless_tree_acacia_logless_tree1_cce3129d4b.nbt"
-hash = "8c5b1b987da815f1dcb4ad258f9115924f57d2a6370df92ba30cdb84db8d6404"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_logless_tree_acacia_logless_tree2_5182f0f5dd.nbt"
-hash = "641f2faf0ff29aec6809753279baace16eae880839567e12e9183fdaa5441bea"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_logless_tree_acacia_logless_tree3_357646c9d7.nbt"
-hash = "088ab4bfaf469b6b2c79f67e9f81e02f16c7248d951b08eda4d387d2ed105f62"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_logless_tree_acacia_logless_tree4_e58854ba73.nbt"
-hash = "c525cb27f526052a4504aaceeeeea84b3c4fc0b476476d15c6dddb39053ab3f4"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_logless_tree_birch_logless_tree1_e142bc0c1b.nbt"
-hash = "fe07181cbca69f7bd1e5b62e1d5ce397e7d70c9b4915ba1d2f3cc7cf7f419e55"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_logless_tree_birch_logless_tree2_cb30976f06.nbt"
-hash = "80ead83ecfad133ec46febd0f779c8a1fe8ecbab0fef105394847568a0755afd"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_logless_tree_oak_logless_tree1_2ed9557e6d.nbt"
-hash = "b54dc80a952bb97fdf9fec4810dbf0bd65c7dc1083c75d5dfc2057e88a8a682f"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_logless_tree_oak_logless_tree2_b72fa10cb6.nbt"
-hash = "1852df2c39597c691be9e08d14e4c014a2a50399f237334fdfe878e36ba5de63"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_logless_tree_oak_logless_tree3_011f1cbbad.nbt"
-hash = "0ea61e81ef83eb3bc5452f4865b7b3aa599ccc491aeaa091395b0544796e8ba1"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_logless_tree_spruce_logless_tree1_f267da65b5.nbt"
-hash = "118b0527b597c9decbb4b59102a5d609152ac14aa6a9ec3308c9a5a48a018733"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_logless_tree_spruce_logless_tree2_d124e5c775.nbt"
-hash = "0444e6c3e92034a284f7e9c63c3758accfcc0b8a7f12bdfa520bcb76e67480bb"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_logless_tree_spruce_logless_tree3_4002ea4011.nbt"
-hash = "a9fd9e891859bd51201a74ad8225db5cfae03e0c02540e1f47235b613afe2d0f"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_mossy_pyramid_pyramid1_b0a2cfef53.nbt"
-hash = "f6df0d71d9be1a150a07e29495454191c4c77ef84b6dde4964d52869f7425a4d"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_mossy_pyramid_pyramid2_e5d2396cb5.nbt"
-hash = "bfbd82e494c701557b4731328e4947188a2b97895312f6791165141ff51c5874"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_redstone_torch_trail_trail1_3d7ce7449b.nbt"
-hash = "1e01dd47cc3f8767e1d218a5ef10adeca5b643711856b29bf66555dfda18b881"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_sand_pyramid_ocean_pyramid_b1bbeddb1b.nbt"
-hash = "051823f4dcd0ce4f821bec0cf60f5bf0d576790000fde1a6dcf00c4c2edf106e"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_sand_pyramid_pyramid1_b501dda707.nbt"
-hash = "8747cb0f5823ad3499022f3c7ba2f63c04c1577ab55bf15f4073c71a442f2301"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_sand_pyramid_pyramid2_6ce0b2cea8.nbt"
-hash = "feec923ae69ca6f456798302e8ea9e9bc664d38c5e012d42483b3a46014b5677"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_torch_cave_e1eb49982c.nbt"
-hash = "032f20457ed2637716105b6c715c4616452de232543b4a572dd173f104440486"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_torch_tunnel_1x2_torchless_tunnel_9f89c98bc2.nbt"
-hash = "57a880a71924bd39ca40589efafdaf698acddebf776c3f9261d2f620a1988177"
-
-[[files]]
-file = "modernfix/structureCacheV1/watching_torch_tunnel_1x2_tunnel_d799b3c55c.nbt"
-hash = "b110be60755b0bdd6a735ff56b2c1d035a5efcd7b5b7620dd8f666c4ed2d9a20"
-
-[[files]]
 file = "mods/AdvancedPeripherals-1.20.1-0.7.46r.jar"
 hash = "e78152a8acc771121772750360e6a89f14414375a5ca7df7da168b1c1f40064b"
 
@@ -3193,6 +2293,898 @@ hash = "fcc5af347ca4e741d1a2cabd250f8f03abdd06504488edc02ec4691e22f5bfb9"
 [[files]]
 file = "shaderpacks/Epoch_Shader_v1.3.3.zip.txt"
 hash = "58129cffcaa85ac35978291dd99652ce80ebf872366186bf3417112bc5e5ccee"
+
+[[files]]
+file = "structureCacheV1/advancedperipherals_villages_scientist_plains_c88f87e17a.nbt"
+hash = "eec6f32e08526ea3b5f53ce6f7d70c3a9796a0306e084f80beeb6b7e0219286c"
+
+[[files]]
+file = "structureCacheV1/advancedperipherals_villages_scientist_savanna_7dcd28536d.nbt"
+hash = "34beaf60956e89e9cc26d160f169247b1adb85d646dc6e117fc572d7839ec2cf"
+
+[[files]]
+file = "structureCacheV1/ashes1ashes_beta_55a921ffc6.nbt"
+hash = "23744c4569181b8d1f14f392d50153680b5ed361741bb0da8d7f83d7f42d8954"
+
+[[files]]
+file = "structureCacheV1/ashes1ashes_cruz_da2218fabb.nbt"
+hash = "d34210272414f54029a0ad92d8876951acfe3be56a8b763bb06a29058ebb8c38"
+
+[[files]]
+file = "structureCacheV1/ashes1ashes_maze2_f503003e53.nbt"
+hash = "4cc05b3e11b0c59e337be46a189c40942b0d242ea730a70a46dc67684509a670"
+
+[[files]]
+file = "structureCacheV1/ashes1ashes_pasillos_6f59a15a4a.nbt"
+hash = "3b4c9e914c76b8c8a30f810ed019de3798a7f47a8b549d058aeceb60bb906213"
+
+[[files]]
+file = "structureCacheV1/ashes1ashes_pueblo2_8be5abe44d.nbt"
+hash = "4113bc88ea9b66c2ad27e8c09fef45020466f71daa410a554f7f0f42aac5f641"
+
+[[files]]
+file = "structureCacheV1/ashes1ashes_pueblo_f78e61d421.nbt"
+hash = "00f5b27d95572aec93ab8fdc87aed5de28b4d196e30995db0343d6e50bafd61b"
+
+[[files]]
+file = "structureCacheV1/ashes1ashes_sonido1_b3492fdd9f.nbt"
+hash = "1cb7acee1986700ce94b64c45be20b5c0c8af3e33c745e7eb6da2c0c40aefcba"
+
+[[files]]
+file = "structureCacheV1/ashes1ashes_sonido4_f78d9eae43.nbt"
+hash = "678af5c051c10381e7caeb9788ab10befb07462f376d01a3e9ed2f960a8ea9be"
+
+[[files]]
+file = "structureCacheV1/ashes1ashes_sonido5_98a27c259b.nbt"
+hash = "500c5c8523627e0e3bb2de9250db824393ff7d5f625d07282e97ab4f50b85917"
+
+[[files]]
+file = "structureCacheV1/ashes1ashes_squid_0b7a30b8fd.nbt"
+hash = "fd4a993bc4537b0a1d1788144c4f2d8213786719c4dea5c755d32135e59df04f"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_abandoned_garden_4_7d02049495.nbt"
+hash = "83a9cbac816040928d12f17d852ea525602719d3d9588f258c31c94d8af5b808"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_abandoned_garden_7_39c78bb582.nbt"
+hash = "a643cbfcea7892e17f34cc7f061fac8e7d61e8adead4977d166b37ff850be20c"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_abandoned_garden_8_a2a5ab3c62.nbt"
+hash = "6101c26358eb213e0df23556a1adfbcdffef532bc7b34ec598947fa687f057ab"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_abandoned_garden_af070e85dd.nbt"
+hash = "fc2671a66732e28b0f3a1114b8864df67532e5b4e68024e8c846a09c376b5bc8"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_abandoned_house_1_7f10797f31.nbt"
+hash = "385a3377070c7d68e079bdbb43cbda08834c934fa33d4b8be8e5b75d33e7d5ec"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_abandoned_house_2_a7e305b803.nbt"
+hash = "d323dfdc0ea04d04cee6bacc1ca21584e6ddbddef61783e1211eeac8aaf3c06b"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_abandoned_house_4_5efcb78c11.nbt"
+hash = "0c9722ee2651f553d6ca0bcd564b725c7cd65aa8e2f700c7fcf012a08f4d34dd"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_abandoned_house_5_6102bf7348.nbt"
+hash = "574cb1110ecfd3d7246ca23754a78fd1284a47452d98cfe3fa8ed5250fc82229"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_abandoned_house_6_8e3e00234e.nbt"
+hash = "3b8e4b4352799f1383da22abcf7bbbbdb30925366c6c46cd5bbf76d04cf3b062"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_abandoned_house_940b1e3c73.nbt"
+hash = "3c68f4282fca5d6b8f1e110f89b07a4bfaba67705e3a0eb647a7e01acc2f221a"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_abandoned_quarry_f31a5c481a.nbt"
+hash = "a150ceec1111b6d43cfdbf3be5205c068ac9a8eb077d6d20f8dbc3eef1cf6ac5"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_lost_wagon_1_fb8dd576d6.nbt"
+hash = "48321de7208dadebf0d1a385afb95f4b1af3e55972f7de73ff558b4323808eee"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_lost_wagon_e73d6ce0e0.nbt"
+hash = "1c75e9c246d273472265c8188965d1f337fb0535449160bd0b351e4f47726f62"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_ruined_aqueduct_2_e607a41ae4.nbt"
+hash = "a1b89f338afa80608c4f66e022cdb682619ffdc3a133914251bf6abbe4032d0f"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_ruined_aqueduct_f9cd73e5fd.nbt"
+hash = "1a1ccf6cb7e764dfe858cac2355d670ab9ca5511523dcc604b8061e52a9627c1"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_ruined_monument_1_13e7cfa541.nbt"
+hash = "32487d0dfdde9bc58a261ad732143354a94161ee38543edca1fc1fa2e939f81d"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_ruined_monument_2_cd9c8b34d7.nbt"
+hash = "43535a807222d11df12a99360a1a15e758c9a3b60d0f09cecc629453b135c3a0"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_ruined_monument_78bb8b93ea.nbt"
+hash = "ee1e938705122b47e798e3fd8aad2352c63298898f534d5a92fa8ca83b718b7a"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_ruined_sanctuary_1_81f0085ff6.nbt"
+hash = "8048f2a62f4c51083bd0dd66b2afe65c2e812422a5ae7d8dc0a048e7181b5e25"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_ruined_sanctuary_28d41455fe.nbt"
+hash = "5fb3fc2edaeffeb42d736b3c2feb8ee27c37ed0aec129375466c382692ec0546"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_ruined_sanctuary_2_ebe807e6b4.nbt"
+hash = "e72785d0cc0f2d664d3dc78f728455faa833243d30023c9a48a548a7f8a2e092"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_ruined_tower_1_41b807bd63.nbt"
+hash = "18541e4713c3a34138e886ecb2a36edb254d03ffbb03db5ebb7fe4d2b88a2807"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_ruined_tower_5_9128c606fc.nbt"
+hash = "bc624fb5f7420691f8107da4a238e1d910b67a144186694c5ae03a38f6b5d445"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_ruined_tower_6_1e05a41191.nbt"
+hash = "58e12ed6df13e350f8bd7f5319d7aa1357e415f7671a89df155f010de10ab489"
+
+[[files]]
+file = "structureCacheV1/dungeons_adventures_ruined_tower_bb39e7487e.nbt"
+hash = "7318f85f72d423e93759aefd198f4761fe8ebf1c7be65b23680b75e1b5b79fcc"
+
+[[files]]
+file = "structureCacheV1/mojangsecurityentity_cube_8e9372e391.nbt"
+hash = "5f509192847d60bf95df10385ff3afc220dfae3d10609d35310a6cdcfe1f8db0"
+
+[[files]]
+file = "structureCacheV1/mojangsecurityentity_dirttower_f5f82a50d7.nbt"
+hash = "5444dbc7c0139cb93ae59b2bc4701d532725d9d38f34e61314d7c8b3e8382976"
+
+[[files]]
+file = "structureCacheV1/mojangsecurityentity_dirttowerhigh_1b4a530525.nbt"
+hash = "15d99cdbd176f4f356561fc2d0dddae705cd97df5775b0acd1c332e2475eb9f2"
+
+[[files]]
+file = "structureCacheV1/mojangsecurityentity_dirttowermedium_f67a326aef.nbt"
+hash = "442af5940c886cfbdce1af639c23c382685a8a591907be16a5aafd4a9b0c2cb3"
+
+[[files]]
+file = "structureCacheV1/mojangsecurityentity_gone_1e7b7cc95a.nbt"
+hash = "367f0837bdd810b3e92f34be442ef28a0048268b4106af05787197b0b6bbffa3"
+
+[[files]]
+file = "structureCacheV1/mojangsecurityentity_largeflatcube_aaf70a4eef.nbt"
+hash = "2d2e9d9b47c09b68ee43a00bcd929f8781fc49e30d78fbfc985fb8afd50803b7"
+
+[[files]]
+file = "structureCacheV1/mojangsecurityentity_podiums_47d63e1f86.nbt"
+hash = "78e11ed7393776bf3736f9c89dee72c6ca8c84d5d026ad752e52b452268c94cb"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_big_ice_spike_1_84a944224e.nbt"
+hash = "2def74ea782bff3bce17788720095c8fcb8a7bb4853144b6c1b7f2e13b7d43cc"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_big_ice_spike_2_4e80c6c10d.nbt"
+hash = "7071be73af473e1d07c65e52ddb5ccf57818a434cc39cff21d40afd53f2851ca"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_big_obsidian_spike_1_7ece60bf08.nbt"
+hash = "175edd2d74e0c48dcf78abc01b2e527effb5d6707453aee090ba5258abeaaab8"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_big_obsidian_spike_2_2e80f48f80.nbt"
+hash = "af5ba2c0ac4ca50f722a34e44ead2e82e6f71a23cc7ff94d104cec17460dec2d"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_big_travel_hideout_17ee1acda8.nbt"
+hash = "29eb2d9e78b840a43050aef45ba6bf457acb4166918d77e86914c5e68b37ad3e"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_big_travel_hideout_abbandon_8e505734f0.nbt"
+hash = "78d3e198daec92ec02b94f7e0bfaff00b3e04530b16d17772c7fa7919a035c48"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_calcite_blob_1_51ab30a8c0.nbt"
+hash = "230cc1292f05c8cadbc7b65aff851ffea53bfb49e5218b44b60907452d7d0be0"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_catacomb_41213873a0.nbt"
+hash = "4b0ad7a3c31886c254a0ba6c578af3782e35766c1c7f4d0a809ef0f1dd239820"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_chest_dungeon_35e8aea95c.nbt"
+hash = "9841052dec8d4d3710217ae25f5dcb4b37ef2680cde5c3f15f4ffa40cd4ce8f7"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_chest_dungeon_desert_d29d31366a.nbt"
+hash = "78da774c328b279be274ce7106b4ae691e277f15ed5f9b7a73127d415f11e97f"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_chest_dungeon_jungle_3210f443fd.nbt"
+hash = "6889e5a6aa98f8eb1415177b5f6351b39105fcdee56b62b8beb8fc377de1843a"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_coal_blob_1_8d8e3e9060.nbt"
+hash = "c9bc83510310897cdd21e11865f22142a30262b7dfce18bd6509a0797e30dc4f"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_coal_blob_2_048bae9dc8.nbt"
+hash = "82e87e384ab11e6cb57a3817c0291303231bf3fc34ea320d043656da435d70f4"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_copper_blob_1_e24c368f02.nbt"
+hash = "75704a270c6877219661eaf8a3e5314eb5c5c2fa3622a2663b9172429c63297e"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_copper_blob_2_c0c1459a13.nbt"
+hash = "3ddc11756b6e41bbbe712693c62f9050c8d25fcef1c3eb3ae19fca2b0472f497"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_creepy_road_1_c3eae9b9f1.nbt"
+hash = "072dc14b9104b38c356d425d19b22013b29bef2cb2d39db1d6c1f807b64b5c74"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_creepy_road_2_68774d494c.nbt"
+hash = "df538b20eea778d83a4ef42036bed8a593461a22922cdf6f406f4293b7b5fa55"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_creepy_road_3_0a4e36db40.nbt"
+hash = "d053a56bcbe4a062aed7556757d9393a36298ddc94c25fa2aadda9e217370bfe"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_creepy_road_4_c3eae9b9f1.nbt"
+hash = "072dc14b9104b38c356d425d19b22013b29bef2cb2d39db1d6c1f807b64b5c74"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_danger_chest_70a9061f5c.nbt"
+hash = "37d45928aba4971c6e8d97c31fd3ac05d037ff4cdf813ce5de8ba7eab68d425e"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_deep_fossil_fragment_1_ad3d05970e.nbt"
+hash = "5bef5904bc21f051e4a2ee31aab3eca8e5e9fc11f9636e5a41239d19cc0367eb"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_deep_fossil_fragment_2_1c90f5fb4a.nbt"
+hash = "3a6267bfb5c646d58e8a9dd1ead0228b395ae2c7933c9bd43a36c24e16e8e823"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_deep_fossil_fragment_3_930eff07b3.nbt"
+hash = "7df00f1546e802fad8ae2de83fda6b71b238872d5851eb78eb124bb5775b744b"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_deep_fossil_fragment_4_898bc65ab7.nbt"
+hash = "435c402c1af5144055f4e32bcd35d67174109cfb784cf862a9af98ad779e288f"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_deep_fossil_fragment_5_f278a59870.nbt"
+hash = "4f03ece367ece5491d9df774a15e813f15d90e97f1f622df1cb09e4512926689"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_deep_fossil_fragment_6_caafa0f21d.nbt"
+hash = "a3417951f36ada14cb38b8c32d08ee3817d90bdbc3e313dacb07c717104fcad6"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_deep_fossil_fragment_7_2787de0986.nbt"
+hash = "50309078f921bbb54ad9cf3916be006d2af08e228c1de9ed20a74166f62e9d49"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_deep_fossil_fragment_8_f39efeeefc.nbt"
+hash = "529ca1f0d2647a567cf7347b63d6fa791855542ddae2406cc04410f4fb2bc1d8"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_deep_fossil_fragment_9_22fa91e197.nbt"
+hash = "85b37a818e19af86df470c911228c17e3bbc21d8a9f9ffe3977a4a4b8389926b"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_desert_tomb_1_32e16e16fd.nbt"
+hash = "7078e8300d2db6b101cb536015395e1958a92fde2f6c1a61c5623c863ad9512f"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_dungeon_desert_husk_7669dff90c.nbt"
+hash = "98c8691880755028d4f94dc218bfa689de0d843ac7c0f9ce5bcf9da48fc897a7"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_dungeon_drowned_5f28a7665e.nbt"
+hash = "3cccdf983584240062bbee3873844be4a89b54bc655c6a4dd5f3632db2446ef8"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_dungeon_ice_stray_acbac9daa6.nbt"
+hash = "0d18fdda400d5f7f0f549f471d282719d855540083a789c5141ba9b9d53f1b27"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_end_shrine_b1a308a935.nbt"
+hash = "ddb3562c41dcb0c4b6fa1a8e7e5a6e4ea8f9f74b704ff9682e6882e756a92a73"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_entrance_1_b02a826bb4.nbt"
+hash = "256f5f84f7db0a877be92dafeb6543d5421787858134db4162260df59b79130c"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_entrance_3_cb17ef87ef.nbt"
+hash = "0a63e9ca490be3fcd3f2f94e89185ffd7d3f3574f8486e0015f881172387b716"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_fake_end_portal_d1ed37ea98.nbt"
+hash = "b3d061331fe78032f1432cb5c83b5f15f0bdfb20dfde9aee5b4b5b6572c287b8"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_fake_end_portal_deepslate_86c3409cf0.nbt"
+hash = "3afc29ffa76c9af073c2991bffbd245285a1f4c1a2b411815bace1988dac2ce9"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_fossil_fragment_1_a20e34380c.nbt"
+hash = "89f35522a1c8354d4c402a405ce5f535b06be5d93933d4b4b74b4b3119dbc0f6"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_fossil_fragment_2_1ad274f497.nbt"
+hash = "34d0b3f7c5107363fc5198f5f155a07810b0b0a451109e3d16963942480f163b"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_fossil_fragment_3_29ffda7f2a.nbt"
+hash = "0aea9c61f50805e5a5d5c070967546f37d3ea0a932a07e4a7deae4df37c7cd3b"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_fossil_fragment_4_8c5ef55925.nbt"
+hash = "4f1fafe449b68c4d733d9a3513fa0d18d850201530e50a2edfe784093bddaad6"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_fossil_fragment_5_525eacdfb8.nbt"
+hash = "997d3ada9f073543e3ecb450bab96cef07d9252acf60240e1a596e3ea0e49607"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_fossil_fragment_6_b9c63a223d.nbt"
+hash = "a8644af0e9975baf194d0bfdfb68fb2cd8453985d06186302f83f741bf0d3935"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_fossil_fragment_7_ee5d7d4d45.nbt"
+hash = "0bda7f5b898954d7c2558322bc798ef90c93a043f3f66d76490927afc2c8af9c"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_fossil_fragment_8_7045aae1db.nbt"
+hash = "1727f2eec67cca7faa11bd20fd68534c1ad73557a0f02be9a086b5021029c332"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_fossil_fragment_9_f93ab6dff4.nbt"
+hash = "218b276178223e9f768eb1fafd573c30a52402ae3c825e25be73bb5ad65d092d"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_fossil_hut_1_59e3600583.nbt"
+hash = "5e1dcb416fb76dddc0878e6a5d04885bd602409f8512e46e8bcbd8ed0b455fd4"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_fossil_hut_2_c45aeaeece.nbt"
+hash = "53c88de96755bda87f86d9ef2217cfe706af940b27271a26fa7c452bdb6e954f"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_gold_blob_1_f1a53c325a.nbt"
+hash = "ba00c9215897cfbf158ba338bd424a7aa44882e7b9b737df2d5734bfbf74fb68"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_gold_blob_2_af8c3baf7e.nbt"
+hash = "d981a208a315e9af5c91d52529393bbdc54ab7f9d3c35a42099cd139c5c5fd47"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_ice_blob_1_0a9a49125e.nbt"
+hash = "ac7ccf5167279346c3dfdf5c02b4375765c4d2908628d83a51520bb1ac53c9ca"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_ice_blob_2_614c9bc8da.nbt"
+hash = "716442014c1d79e45a158751bced816cfba83951eaaf2546acec3e9502945bbb"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_ice_cluster_1_a8b51970c0.nbt"
+hash = "64543418120aeb208c7660d52dc50c92bbc1cff3a16008fac94f256253c604bf"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_ice_spike_1_e6e250b9a4.nbt"
+hash = "18515f35abd0be5c0daefcc3cc8f1e2a687ebc099aebca16dbf1a90be2dcb69a"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_ice_spike_2_1002b5a980.nbt"
+hash = "455a62b151089130fbbab2a9ae7c8b7498fe7b7144b85190128dfc43c5a90335"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_ice_spike_3_7d70e439c1.nbt"
+hash = "7243de726fae1a1460c856a7e3a975485e18025d46dd3065ff34e9fdfebd8f77"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_ice_spike_4_e33f25377e.nbt"
+hash = "e6a7ce51f1bcdf025fe64518ef3313e3fcd129e1e5505e210048eb7b84b1bc03"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_iron_blob_1_2d958d4952.nbt"
+hash = "8ba0c9b94d8707c4cbb1f18bca5b9ca089b2931a3251b50bb57645b8a3f807d1"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_iron_blob_2_0696003be8.nbt"
+hash = "759404e6fc6bf9ad67d7dd8e0554b57621f90b937b80094f32c22b93bfa9685b"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_mamga_blob_1_f82a83c743.nbt"
+hash = "5edc64f92c2ab1630996023141e6594d12efaf071d34403c63ac06e7512f37e9"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_mamga_blob_2_79bb9fa797.nbt"
+hash = "cce1cba51934e9e75503ac4016423595ff39afdb666b328e5b34eea0d4ce8e4b"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_nether_pirimide_1_866756370e.nbt"
+hash = "3bb947cd43f9116a72e54d7be0a7021020044531e2e3a01096071283b019677e"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_nether_shrine_449e7afa0e.nbt"
+hash = "a8d325d574cbfc965f48328c1a5e2d847df07a7f775dbee6557847419668959e"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_obsidian_cluster_1_c9fc5aaea6.nbt"
+hash = "1616285a8c68813b3e83ce4920feecbc9d7fb1727220fefb91526e4bc602a4f6"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_obsidian_spike_1_a0d0a4c32b.nbt"
+hash = "beee331f9c79d176a11adea7d0a946332d02a56543f6196d54182bed0ba584e5"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_obsidian_spike_2_ee1cc9104a.nbt"
+hash = "e083b2471a4ee1d404b5abcde944a55e54abfc31d70646a8c85f94e202ece9cf"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_obsidian_spike_3_afe9214f53.nbt"
+hash = "d9007f6237b33af277ae1a299c04054ade246d08a0316f999cd228aeaf33a1fb"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_obsidian_spike_4_0ed4b02fed.nbt"
+hash = "a09aa61c6e1aad1d1b4e7999864e6ec083e0f9c7b8c121155c2b2efcba1fd385"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_old_bed_5b112e627c.nbt"
+hash = "606d82e0fe7bb1ca8746963f9aa6245bdd782167302bd78437be5e50bb488930"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_smal_lava_cdbcc06ec5.nbt"
+hash = "8770b2ddf525036a30aa38e5272191ada2fc5827f0750c1553db477c492e527e"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_smal_water_6f6e67ae6f.nbt"
+hash = "6b982fe668161128eb56483911bc36f95393ffdd43664a8de7b58dd5dfff1e47"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_calcite_vein_1_228b8ba8dd.nbt"
+hash = "16a1572998d67d05f5f07eee1d5364747bab544576a07b4324acfc9c7ceb89cb"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_calcite_vein_2_45914f5b79.nbt"
+hash = "c6b31370c8c435ff2327a595dee896f5ef052d7d14b28a1650153947d09cd6d6"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_calcite_vein_3_d717200c1d.nbt"
+hash = "40f18d01e923b42aac6bb6514e8a8200df20126f1c46b3cab11649e46d64d10c"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_calcite_vein_4_285bf352ad.nbt"
+hash = "09c43a94408be42f7dbb566ec2af7b4f8b40f724a0bb3fdee9ef8ad6cb7e54fd"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_coal_vein_1_6920d5ff99.nbt"
+hash = "76682e7c8afed00ca783d35d14a7a0eb0ab0d6f01cdb6c0b22d83a7f9b2aaa7a"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_coal_vein_2_262aa2c956.nbt"
+hash = "c28a1c3dbaa04ee4412be6e67e65c1051039a8293ef17a47e7550e1d9601919b"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_coal_vein_3_122c489823.nbt"
+hash = "a4c6e6fa5666f92a277c3f1c8d4d4511cd604caae1b0b4af3febacec3eb981d2"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_coal_vein_4_adaa9c7036.nbt"
+hash = "f074d541c5438d7240223976335976a53731e49082ca10dbcd8c219cc29981f0"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_copper_vein_1_c1fc8cea29.nbt"
+hash = "957af0f92413dc3f43b16c037fb494eb0a4e4cd519d7d66258e39ad75e2c27dd"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_copper_vein_2_fae1cdef5a.nbt"
+hash = "42f51ae69533ebeab06e4261c1278fd93098e4483f7a914223556885e01bcdd9"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_copper_vein_3_e671b9fc1e.nbt"
+hash = "09673f762fa077d879e0f95a5f38a52f31789b1444cabb5963d8b1f82baa5288"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_copper_vein_4_ad170911bf.nbt"
+hash = "46b4f838653207f189fe4975d1929627171ff6d7e482aca49561e79a985caa6d"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_geo_1_e36de91b2a.nbt"
+hash = "74904a5a63d4e42f51ae663db3b33642432e5c835a1114f76dc7026fcbb3e51d"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_gold_vein_1_f278c3ca19.nbt"
+hash = "dbf00d15df00e0db9de9ed7d7ff70ae64801dd8849d3040a8f4cf4e0b20305b8"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_gold_vein_2_66d63a35cf.nbt"
+hash = "b972d0fdfd0be4e94f2483c74dd96c6e12df97e88058bfd5d3358f624cf94c3b"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_gold_vein_3_f143dc9a9f.nbt"
+hash = "ae8cb9f8e38cb7fb2b6ef2fcf52b5d69cdef2c5535335005871e6b269f273dbc"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_gold_vein_4_c1691009f6.nbt"
+hash = "0e98fc8f7bc1be8106ab651718ea8c493f5e447a7ba492f7fcd3db0990bda366"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_ice_vein_1_23fd826731.nbt"
+hash = "132a487f924f55f9ebcd28c574f1feae5b135d634915b2ed208f79353ce71b3b"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_ice_vein_2_8c41c8aca0.nbt"
+hash = "4660f893921a3f8d3592a58f6591f06c279bcf80d86ed32df1263bb5a20c2fec"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_ice_vein_3_2006e4a075.nbt"
+hash = "8f0f98e91aaf1d0d110f284432fe194c090428b5575600e392be54ef7f338a16"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_ice_vein_4_1bfe91ebed.nbt"
+hash = "bbd88c61edb6719f235dee354fc019c1573fc3262f9ccc6772bbf2868e5b5d94"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_iron_vein_1_9913cc63ea.nbt"
+hash = "d28ecbfe87c1b7aa59b20ecebeff4dd5cc7fb9c75413f3a3464ea186125b1f1e"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_iron_vein_2_6fea2274cf.nbt"
+hash = "e8452a2bd20764b834259acf9a3264d5b78a78e6ce5d137c459e1025e4b6159f"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_iron_vein_3_6894e9b893.nbt"
+hash = "2efc58970a446adb6ddcdf1281f11e3a0d91bf6018b8582bbaa186313ad755ad"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_iron_vein_4_ab79c81624.nbt"
+hash = "ed1c606fbd125989950a60db7604f0c1ea685420a2e8998f3d8be51e27dd37f1"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_magma_vein_1_e6808822d1.nbt"
+hash = "43b3647a3df9d7b6782b5920706d7c48a7fa2feda732ba6348528e6eb2a9cf0f"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_magma_vein_3_7477e7c7e0.nbt"
+hash = "8b83a5f111a6a04b979d61f239cb58783cd507f31f9c917ddee887c23ed2092b"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_magma_vein_4_0b8a2a4fda.nbt"
+hash = "accf48be48ca8fd12a0e52a2f9e18147a8c3dddc709817758001b01562ba6fb6"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_mamga_vein_2_21afc6234f.nbt"
+hash = "5f61bbb967b4c0bf0d40650290a788f6b5f06b307c00aa58c9ca37d110537202"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_travel_hideout_484d28e81a.nbt"
+hash = "96d216c197e891e968d595de6883a8a664b8a2df1ec511f85e604ce3909458ce"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_small_travel_hideout_abandon_9d8b16838a.nbt"
+hash = "1b77b9997e60811a165d894d96da0f0d3cf4255f295e4c3ac19165f0530cd0e7"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_stone_shrine_0c610e8aa6.nbt"
+hash = "b2e6cec28e7ca190f61c66ebfbdfebbf5a6c4bef85d82d3c0711d57c012d990f"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_tilted_ice_spike_1_03da58924a.nbt"
+hash = "504ae67a904d4d0d1502f5ca6830e14cfd82d3efdefe206eb58edca2554b417b"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_tilted_ice_spike_2_28d269f1fe.nbt"
+hash = "fe5695fa17b938ba75e3566d48977faad4eff3a7f716b49001265c26545c8316"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_tilted_obsidian_spike_1_24de3028c2.nbt"
+hash = "d8d0a624919375c5a1c7d165b5ca17b0ed4a615c5228aef406a518ce3c9cd377"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_tilted_obsidian_spike_2_25cb8352fa.nbt"
+hash = "19350666d24feb148d5be22708bd3d95c03123412cee889c386c3830312296ca"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_underground_well_f207a18cde.nbt"
+hash = "52999ec8eda55bede19653ad9e4aa57d00025d3b07dad43d6137d62510b0de97"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_zilverfish_dungeon_c42843f7fb.nbt"
+hash = "4765e9c0d86b0135d6eea800d23c9406a0db1a1833f9f30b344e92ddb4b05e93"
+
+[[files]]
+file = "structureCacheV1/more_underground_structures_zombievillager_dungeon_fd0f2e7ef3.nbt"
+hash = "6e6a21cd22d4b343abfb3fd9be1c6af8115761afd8b8e8e9d143503533d7a240"
+
+[[files]]
+file = "structureCacheV1/onrdsrexp_lost_wagon_2435ddcfb4.nbt"
+hash = "464f8d8648e860704c347cfb1db678b1a13096099c825c1792935459b76549f6"
+
+[[files]]
+file = "structureCacheV1/onrdsrexp_ruined_monument_203e3fc6c4.nbt"
+hash = "4c16d2d031f77448669a504caba285a08ac964936e96285ecd397ac3040c019f"
+
+[[files]]
+file = "structureCacheV1/onrdsrexp_ruined_tower_9dd64aca82.nbt"
+hash = "bcaf7899d0f39fe070573a603d18860f19dbcd95fc4deeb019a0b602925ed1af"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_a_castle_dungeon22_8ebee69082.nbt"
+hash = "27d90ad0e4c27eb3b803d39723e2e91323da6b75373263a5c494ac1514a75e12"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_a_castle_dungeon_1c847f4e34.nbt"
+hash = "46ec2bd2c5f9c16a3920abc3298592f02d049ce1f4714c86176f028db2433e6c"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_a_giant_libary22_e3b79a9961.nbt"
+hash = "51230e919bf97201b96ae5f312ac48413e41fb06dd40932f859ede3fa8673524"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_a_giant_libary_622ebd4d36.nbt"
+hash = "14419fba6a3d9844d696489f1c7453930560b22ca9da98e09cb20adac3b4ee42"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_a_giant_skull_c5809ca8be.nbt"
+hash = "b55dff6bfe7a54aeddc9d54a2f040e4e6c7b34ca8764ffcd11b6e92a163a115d"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_a_prison_neg_x_skel_spawn_407e65a082.nbt"
+hash = "d19d943195fdf959b126094fb0a60a3c281d7430bee26f4842b92013952a4da0"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_a_prison_neg_x_skell_spawn2_cebe8517da.nbt"
+hash = "a9ffb4732674aa0cfe23fd8d668e587fdef202b3ca26e0d7f3eaf3bbb46baf10"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_a_prison_neg_z2_45af639b5d.nbt"
+hash = "07e4396d5c92a028bd324378a9a67dc4e543b2a222086db42f231213da945717"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_a_prison_neg_z_0b4acabdfa.nbt"
+hash = "e8aa2597ec8359d29db13400343c19cc9f2aea6ce7e49ac169a2375cfa05974d"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_a_prison_pos_x_skel2_03d36fe4a7.nbt"
+hash = "ac416e16d8cea631ecf352260d084affff843063a3506ecab6e73911fd2b82af"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_a_prison_pos_x_skel_99d253aa5d.nbt"
+hash = "7fdb6e35634b1c7bd5458951f11002fbee5aa2f87bcf47cd8b0a3a1388d099f5"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_a_prison_pos_z2_1e18a1943a.nbt"
+hash = "3aa15e09f1a8416d96698dd5aea7035a8846a1cd1fbf77a461b7c6ec6e245f05"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_a_prison_pos_z_c386409576.nbt"
+hash = "f0d1ed047203cf9bfbf84d70d12ab9f0f9a84d609094a6e660b7fd10f284e600"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_brick_room_neg_x2_65781cbd54.nbt"
+hash = "ecf378f26d3ba7bd5573caccfedbf9c1ac6929abd6df2a754f20f81b6e5a5a95"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_brick_room_neg_x_80dfbf5e3a.nbt"
+hash = "8ffe57409b04e69036a842b96a0fc158b07fcc1342f354e5e69948371da0a546"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_brick_room_pos_x2_866f6223a2.nbt"
+hash = "859ad8bd3ae8e64783cc5a5d8ca20ffac6588d9add9b5c683d0bd605a287f83d"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_brick_room_pos_x3_afc8a7cb0c.nbt"
+hash = "37887b600faf47816c873982ddad64d67bbac75beeaa227c3a99bea43da4947f"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_brick_room_pos_x4_f9ff2913a2.nbt"
+hash = "4f00110d0852b28a428769c85ded4c8bcb749028ab6a138d92245de100c4b90a"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_brick_room_pos_x_73104554ce.nbt"
+hash = "1d159843773c9682d8f47db9061e37a72c2c6fb5b964e29f2fe473af9870011b"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_brick_room_pos_z2_fa9c39f35c.nbt"
+hash = "179e4c38f2b2cb01c5f4ec6e83f48303cb0f1beb85c3914ad35eeffb99aa2026"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_brick_room_pos_z_ac6ca6a6a1.nbt"
+hash = "74fad67ea4fe8203f3e276e908d46a20ac2e2aad6da65c803fc30c84d469ac17"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_castle_spanwer_main_dungeon_bef428573b.nbt"
+hash = "3e548dd5116d2f57ab98cbba202b08047c54f250698c7acd28da8662664f7776"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_flea_spwner1_708ed0d017.nbt"
+hash = "942b488c5a00b1c2f52546254bb63fa637653dd0fdc37ffa2015fafa8e2a8f01"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_house_main_dungeon_6db587ceed.nbt"
+hash = "773f8dba2e4b306af82a810aeb2b53e67c83a98f437c26c84a2da3f459eeccd9"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_lave_bridge_01daaee934.nbt"
+hash = "8aad147b4d37325aa617c5708482fefb844c346da9ef615d264c2886e63dcf21"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_lavebridge-2_108b8079e7.nbt"
+hash = "460ad9bc883191f69fc61a7b7387c9c9187d941415b289ba418abd017b840f6d"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_mineshaft_elbow_one_new_postive_z_99ee50a869.nbt"
+hash = "282eb8c4405fbf7f8515c1b8165eabbbe04f2884876a8360f7bf1408d2f96935"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_mineshaft_hole_postive_x_71c9f8531d.nbt"
+hash = "a0f1365e16efb631250b84bce6d60c70ade467f0b25f7c19cdd52beebd0d954d"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_mineshaft_longhall_new_f809a32c1e.nbt"
+hash = "00aa5e7d5646be059d3839387efddd5d5255cb15fec4dcf76c3fcab97b3f11e7"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_mineshaft_longhall_newpostivex_f809a32c1e.nbt"
+hash = "00aa5e7d5646be059d3839387efddd5d5255cb15fec4dcf76c3fcab97b3f11e7"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_pit20blocks_062118d1d6.nbt"
+hash = "7d30b4eb95845db3276b0ef0eebad161eb109e6cb03369178de0cb8a43436305"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_secret_room_pit_d2ece900eb.nbt"
+hash = "9c8d97011f262fb54fa5aa78445c7791c044f3d5380364c864508da462f520e0"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_skinnyhall-x2_a095fd53b6.nbt"
+hash = "12419163f9febb1d644e9f9da67b2e35da42e49d4b2efdc5ff24dff63431b6b4"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_skinnyhall-x3_a8798e1790.nbt"
+hash = "d113d96c114259d92ca2925c3d6e4a6f69af21d7316d4ed9ce490a41c9fc2908"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_skinnyhall-x_8557c33451.nbt"
+hash = "60421a013b1e2514d6f6cccd0e48a01ce2a1f436ffcdff7f84fa77ac051580e3"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_skinnyhall-z_242c5d32d8.nbt"
+hash = "6b0dfce37c877ba4e9adac6b91ddbfbbb2228506621ae90ad7dd02387318a195"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_skinnyhallpostive-z2_aa8984df3e.nbt"
+hash = "f413f73b1a921d47be788496ef614b3cc04af105e82251422c3ef63724f45665"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_skinnyhallpostive-z3_9283ad32a6.nbt"
+hash = "90f9fddd8baf71408a12d40991fbdbcfd4ddde56e01ef0d13b6e9dd3f98ac492"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_skinnyhallpostive_z_2762b8e11f.nbt"
+hash = "145e3a8e087b3d50c113a2572f4d676ec74a14e4e5965f1d4a4e0450f14a1b0d"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_statue_spawner_main_dungeons_cd2e70e2a5.nbt"
+hash = "c09348a29986362512b11087dc786d652c2e24d10632abf07c72efd7be63024a"
+
+[[files]]
+file = "structureCacheV1/randomdungeon_villagehouse_spawner_main_dungeon_56cd975794.nbt"
+hash = "cd47f6c60641a391098d5cfa3383ba513696b29299782e3915df577ac86789dc"
+
+[[files]]
+file = "structureCacheV1/the_masked_campsite_eb3ee77d7b.nbt"
+hash = "c7dab3fd038ea2e825fc6b1a5502b5c9717f8067aec9072c3f3847d46929cd52"
+
+[[files]]
+file = "structureCacheV1/watching_leafless_grove_oak_birch_grove1_14611ca03b.nbt"
+hash = "b25c60c16e1f10bd13299637db6ea5170b799f92015efa9ab7bbfbfde6c87eb5"
+
+[[files]]
+file = "structureCacheV1/watching_leafless_grove_oak_birch_grove2_d97dcab539.nbt"
+hash = "1f929f49bce24eb280a1f1903442a3f4743539078d58924200b2ec86d207193e"
+
+[[files]]
+file = "structureCacheV1/watching_logless_tree_acacia_logless_tree1_cce3129d4b.nbt"
+hash = "8c5b1b987da815f1dcb4ad258f9115924f57d2a6370df92ba30cdb84db8d6404"
+
+[[files]]
+file = "structureCacheV1/watching_logless_tree_acacia_logless_tree2_5182f0f5dd.nbt"
+hash = "641f2faf0ff29aec6809753279baace16eae880839567e12e9183fdaa5441bea"
+
+[[files]]
+file = "structureCacheV1/watching_logless_tree_acacia_logless_tree3_357646c9d7.nbt"
+hash = "088ab4bfaf469b6b2c79f67e9f81e02f16c7248d951b08eda4d387d2ed105f62"
+
+[[files]]
+file = "structureCacheV1/watching_logless_tree_acacia_logless_tree4_e58854ba73.nbt"
+hash = "c525cb27f526052a4504aaceeeeea84b3c4fc0b476476d15c6dddb39053ab3f4"
+
+[[files]]
+file = "structureCacheV1/watching_logless_tree_birch_logless_tree1_e142bc0c1b.nbt"
+hash = "fe07181cbca69f7bd1e5b62e1d5ce397e7d70c9b4915ba1d2f3cc7cf7f419e55"
+
+[[files]]
+file = "structureCacheV1/watching_logless_tree_birch_logless_tree2_cb30976f06.nbt"
+hash = "80ead83ecfad133ec46febd0f779c8a1fe8ecbab0fef105394847568a0755afd"
+
+[[files]]
+file = "structureCacheV1/watching_logless_tree_oak_logless_tree1_2ed9557e6d.nbt"
+hash = "b54dc80a952bb97fdf9fec4810dbf0bd65c7dc1083c75d5dfc2057e88a8a682f"
+
+[[files]]
+file = "structureCacheV1/watching_logless_tree_oak_logless_tree2_b72fa10cb6.nbt"
+hash = "1852df2c39597c691be9e08d14e4c014a2a50399f237334fdfe878e36ba5de63"
+
+[[files]]
+file = "structureCacheV1/watching_logless_tree_oak_logless_tree3_011f1cbbad.nbt"
+hash = "0ea61e81ef83eb3bc5452f4865b7b3aa599ccc491aeaa091395b0544796e8ba1"
+
+[[files]]
+file = "structureCacheV1/watching_logless_tree_spruce_logless_tree1_f267da65b5.nbt"
+hash = "118b0527b597c9decbb4b59102a5d609152ac14aa6a9ec3308c9a5a48a018733"
+
+[[files]]
+file = "structureCacheV1/watching_logless_tree_spruce_logless_tree2_d124e5c775.nbt"
+hash = "0444e6c3e92034a284f7e9c63c3758accfcc0b8a7f12bdfa520bcb76e67480bb"
+
+[[files]]
+file = "structureCacheV1/watching_logless_tree_spruce_logless_tree3_4002ea4011.nbt"
+hash = "a9fd9e891859bd51201a74ad8225db5cfae03e0c02540e1f47235b613afe2d0f"
+
+[[files]]
+file = "structureCacheV1/watching_mossy_pyramid_pyramid1_b0a2cfef53.nbt"
+hash = "f6df0d71d9be1a150a07e29495454191c4c77ef84b6dde4964d52869f7425a4d"
+
+[[files]]
+file = "structureCacheV1/watching_mossy_pyramid_pyramid2_e5d2396cb5.nbt"
+hash = "bfbd82e494c701557b4731328e4947188a2b97895312f6791165141ff51c5874"
+
+[[files]]
+file = "structureCacheV1/watching_redstone_torch_trail_trail1_3d7ce7449b.nbt"
+hash = "1e01dd47cc3f8767e1d218a5ef10adeca5b643711856b29bf66555dfda18b881"
+
+[[files]]
+file = "structureCacheV1/watching_sand_pyramid_ocean_pyramid_b1bbeddb1b.nbt"
+hash = "051823f4dcd0ce4f821bec0cf60f5bf0d576790000fde1a6dcf00c4c2edf106e"
+
+[[files]]
+file = "structureCacheV1/watching_sand_pyramid_pyramid1_b501dda707.nbt"
+hash = "8747cb0f5823ad3499022f3c7ba2f63c04c1577ab55bf15f4073c71a442f2301"
+
+[[files]]
+file = "structureCacheV1/watching_sand_pyramid_pyramid2_6ce0b2cea8.nbt"
+hash = "feec923ae69ca6f456798302e8ea9e9bc664d38c5e012d42483b3a46014b5677"
+
+[[files]]
+file = "structureCacheV1/watching_torch_cave_e1eb49982c.nbt"
+hash = "032f20457ed2637716105b6c715c4616452de232543b4a572dd173f104440486"
+
+[[files]]
+file = "structureCacheV1/watching_torch_tunnel_1x2_torchless_tunnel_9f89c98bc2.nbt"
+hash = "57a880a71924bd39ca40589efafdaf698acddebf776c3f9261d2f620a1988177"
+
+[[files]]
+file = "structureCacheV1/watching_torch_tunnel_1x2_tunnel_d799b3c55c.nbt"
+hash = "b110be60755b0bdd6a735ff56b2c1d035a5efcd7b5b7620dd8f666c4ed2d9a20"
 
 [[files]]
 file = "version.json"

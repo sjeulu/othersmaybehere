@@ -1,13 +1,14 @@
 { nushell, writeText, writeShellApplication, inputs, system, ... }:
 
 let
-  script = writeText "rebuild-packwiz-endpoint.nu"
+  name = "rebuild-packwiz-endpoint";
+  script = writeText "${name}.nu"
     (builtins.readFile ./rebuild-packwiz-endpoint.nu)
   ;
 in
 
 writeShellApplication {
-  name = "rebuild-packwiz-endpoint";
+  inherit name;
   runtimeInputs = [ nushell  ];
   text = ''
     nu \
