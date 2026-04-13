@@ -1,0 +1,13 @@
+name = "Hardcore True Darkness"
+filename = "hardcoretruedarkness-4.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "50e9ea7ca0f1f2c33d8eff78fb7ccf94206213ca"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6637983
+project-id = 1280023

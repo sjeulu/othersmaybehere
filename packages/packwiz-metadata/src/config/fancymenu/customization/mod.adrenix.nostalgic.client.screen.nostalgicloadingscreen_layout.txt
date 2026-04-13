@@ -1,0 +1,52 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = mod.adrenix.nostalgic.client.screen.NostalgicLoadingScreen
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1717451760888
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:f90d8422-dc66-42cb-aa81-bcc182c56fd4-1717451718211] = [groups:][instances:]
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+}
+
+element {
+  audio_instance_0 = [source:local]/config/fancymenu/assets/creep.ogg.ogg
+  play_mode = normal
+  looping = true
+  volume = 1.0
+  sound_source = master
+  element_type = audio_v2
+  instance_identifier = a7513d06-56e4-484a-a6fa-15b2c37015a5-1717440697440
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -270
+  y = -170
+  width = 100
+  height = 100
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 4fb93ca2-7ee3-4614-9dba-bc9fa80aa40a-1717440697440
+  [loading_requirement_container_meta:4fb93ca2-7ee3-4614-9dba-bc9fa80aa40a-1717440697440] = [groups:][instances:]
+}
+

@@ -1,0 +1,13 @@
+name = "Proximity Chat"
+filename = "proximitychat-1.20.1-Forge-1.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "91464eabf5ee7e45e7b1dcd51b420f66e302da09"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6034920
+project-id = 1166530

@@ -1,0 +1,13 @@
+name = "Brick Pyramid Infdev - UpPort"
+filename = "brick_pyramids_infdev_-1.0.0Alpha-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3738fae8f1ec32b68b108dfd05e25a5db98eeae2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7026676
+project-id = 1352480

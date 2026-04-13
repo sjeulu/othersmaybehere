@@ -1,0 +1,13 @@
+name = "more underground structures"
+filename = "more_undrground_structures_1.20.1_8.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e562be8655fe7553b525b5208f828e9166f7cd50"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5546306
+project-id = 476662

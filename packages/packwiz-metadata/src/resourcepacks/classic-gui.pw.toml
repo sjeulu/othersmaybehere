@@ -1,0 +1,13 @@
+name = "Classic GUI"
+filename = "Classic GUI.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "919567a373ef102af268c786c12876ddc851a42f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3034707
+project-id = 400184

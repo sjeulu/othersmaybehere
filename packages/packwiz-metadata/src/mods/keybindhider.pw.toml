@@ -1,0 +1,13 @@
+name = "KeybindHider"
+filename = "KeybindHider-Forge-1.20.1-1.2.2.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/MVgNXRxk/versions/3en6qVzv/KeybindHider-Forge-1.20.1-1.2.2.jar"
+hash-format = "sha512"
+hash = "f56a6b74b63820549f3983deb614fe4dae7b0ce4ed856bfbd6270826b3e413fafae88a4b93720ec1776be2f553f0ccd87bfa07d23afaea9f51ed3dca3a283fe7"
+
+[update]
+[update.modrinth]
+mod-id = "MVgNXRxk"
+version = "3en6qVzv"

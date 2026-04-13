@@ -1,3 +1,9 @@
-{ packwiz, mkShell, ... }: mkShell {
+{
+  packwiz,
+  mkShell,
+  ...
+}:
+
+mkShell {
   packages = [ packwiz ];
 }

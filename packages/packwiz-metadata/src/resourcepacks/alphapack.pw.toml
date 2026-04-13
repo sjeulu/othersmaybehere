@@ -1,0 +1,13 @@
+name = "Alphapack"
+filename = "Alphapack.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "588180ddc78759d985f661fd37d744c9b8cda5e4"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3237970
+project-id = 456445

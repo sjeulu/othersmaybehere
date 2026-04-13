@@ -1,0 +1,13 @@
+name = "Gosha's RPG First Person Pack"
+filename = "Gosha's_RPG_v2.1.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "be99b5bae11c4d4eeb25352d87bd41f6638a3c40"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3330293
+project-id = 354579

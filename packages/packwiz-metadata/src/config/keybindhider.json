@@ -1,0 +1,23 @@
+{
+  "hiddenCategories": [
+    "nostalgic_tweaks",
+    "placebo",
+    "oculus",
+    "iris",
+    "entityculling"
+  ],
+  "hiddenKeybinds": [
+    "key.playerlist",
+    "key.socialInteractions",
+    "key.spectatorOutlines",
+
+    "iris.keybind.reload",
+    "iris.keybind.toggleShaders",
+    "iris.keybind.shaderPackSelection",
+
+    "placebo.toggleWings",
+    "placebo.toggleTrails"
+  ],
+  "disabledKeybinds": false,
+  "consoleLogs": false
+}

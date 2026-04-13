@@ -1,0 +1,13 @@
+name = "Old Sounds & Music"
+filename = "old-sounds-default-version.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9add4a1d338b7abe9e93a21c39ebf34f60f361f7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4595826
+project-id = 794183

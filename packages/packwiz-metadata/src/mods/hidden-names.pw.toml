@@ -1,0 +1,13 @@
+name = "Hidden Names"
+filename = "hiddennames-1.20.1-1.0.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "397459119448bea9d338c60afda0ce1ae15358c1"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6293591
+project-id = 479134
