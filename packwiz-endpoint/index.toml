@@ -1015,11 +1015,6 @@ hash = "275d03662d049e6f6996670b545ef898103b9cfc7c40e17587ef27ba93dd8797"
 metafile = true
 
 [[files]]
-file = "mods/disturbed.pw.toml"
-hash = "3ebf531e8cc64bc8161991b247bf5e47ec6037d27aa40352c00d985cad61f8e4"
-metafile = true
-
-[[files]]
 file = "mods/drop-down-keybindings.pw.toml"
 hash = "1be041c1a12af55f57fef780b6f73315bb439d21b520d275447f1efe8ea140fe"
 metafile = true
