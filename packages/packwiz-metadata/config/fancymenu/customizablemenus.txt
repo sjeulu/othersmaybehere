@@ -36,3 +36,6 @@ net.minecraft.client.gui.screens.controls.KeyBindsScreen {
 net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
 }
 
+net.minecraft.client.gui.screens.VideoSettingsScreen {
+}
+

@@ -174,7 +174,7 @@ hash = "541ee90994c1cf3d4e132df2ac3ff74004bc3952d3914ae843b5089a4dda8a95"
 
 [[files]]
 file = "config/darkness.properties"
-hash = "8bcb7e875d6bcf476af667b28f5358005d4a08388a4f069d1b226a7c20301d6c"
+hash = "01dc6f24190cb47f284cd98f70cc0f14ad09e15a86d039837b374cf58309d2dd"
 
 [[files]]
 file = "config/deep_aether-client.toml"
@@ -226,7 +226,7 @@ hash = "66bbef3dd895941e28db52d85ef5e8a1ecda6dc26377a47ff6dc623ece2f73fa"
 
 [[files]]
 file = "config/embeddium-options.json"
-hash = "9ac4fa433eb4905f1847ab2e4b7c3c8ae48bd5a7e72cf0b59deca75893cd67ca"
+hash = "b41164f04819ee18b5c497a7b21c3e1b0c5ee4b96f53ffd5c4f8ff756372913d"
 
 [[files]]
 file = "config/endofherobrine-client.toml"
@@ -278,7 +278,7 @@ hash = "ff492043eaf454c46e949d5eef32ece90cc5a19feb50a161dd29a43b5732c880"
 
 [[files]]
 file = "config/fancymenu/customizablemenus.txt"
-hash = "3cf4189a9edca598b81426f31a6184498de1cf0815ed5861a97d5be30ca2069b"
+hash = "057ab5331d3835f0a6036e39272c78a456ca0b0333f3ad466e531961467c6f7b"
 
 [[files]]
 file = "config/fancymenu/customization/controls_screen_layout.txt"
@@ -322,7 +322,7 @@ hash = "34c11dde687a4dac1d49126f2e7896c8a31dd7faf110e308512f9de3f0897238"
 
 [[files]]
 file = "config/fancymenu/customization/options_screen_layout.txt"
-hash = "882c9c81c415bd1ade936d707e6669df054ad960256b71679c42d65aadc2c96b"
+hash = "8409ab250a94db2b1baef420263c26c1929eab59d9c9b359fafa6dd798dadeff"
 
 [[files]]
 file = "config/fancymenu/customization/pause_screen_layout.txt"
@@ -674,7 +674,7 @@ hash = "d3677ed2cee0a1837f12ce661727a7b2eeda9eaad2ff6c5e398ae95b477165a4"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "57e191ad8dd19498cba486eb22a7a074f396e25a59f3b5940059ecc9b6e34972"
+hash = "05bd7fefce1ec5efa8f75d0eac85e54c0240741c8a513b82cb7896f375ac0c9c"
 
 [[files]]
 file = "config/placebo.cfg"
@@ -1021,6 +1021,10 @@ file = "config/zombieawareness/PlayerRulesAndLists.toml"
 hash = "0c9cb7ce493414f2a4b846417db297b8c24ec9950e5e2630d1cfff387568f5ae"
 
 [[files]]
+file = "default.nix"
+hash = "6583a90b8dcf5fdc163297fa9c25c321a9bc5e75a95e2460a7355231f492c2e3"
+
+[[files]]
 file = "defaultconfigs/computercraft-server.toml"
 hash = "66617095cde5743813584808395cdcd87801f843612a6db240dc12b40098fde2"
 
@@ -1034,7 +1038,7 @@ hash = "c79892b2e4d4e3d88bf708dd43000ede9759728a1f612d58acc26b7d984f8b50"
 
 [[files]]
 file = "fancymenu_data/buddy/buddy_save.json"
-hash = "132666c71d111e4371e35e1cf13459f52f436e9a7436dd7e2956332934fc2e2f"
+hash = "c357055d65f94744ba0c84674bcb31cad954338c0910d6f45aed89a627757276"
 
 [[files]]
 file = "fancymenu_data/last_world.fmdata"
@@ -1043,6 +1047,10 @@ hash = "e2dca752180d0c21f0c8f28ede1d35a01307edf5725d0d9d210a8a74c64ca5b5"
 [[files]]
 file = "folder.jpg"
 hash = "dc811749296fed1f87881943ffd44eba553fc2c3eaae1e93c21791a13236cf26"
+
+[[files]]
+file = "folder.png"
+hash = "9c0a6cb34c5f4fec77e19c5f02eedbf8e4dc1dbbf3660aec12717f0f2b0569e4"
 
 [[files]]
 file = "global_packs/required_data/tuning/data/computercraft/recipes/wireless_modem_advanced.json"
@@ -1858,367 +1866,375 @@ hash = "fea887c88b242bd05cd5226c126567bc522d320821c0667f96433af4623044d8"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/advancedperipherals0.7.46r-AdvancedPeripherals-1.20.1-0.7.46r.ser"
-hash = "afacbe0e7a6c3d5c5c073b45e9b26df20d660f5ba53d9335d2f4f67285424bbc"
+hash = "688a608111941646094da67491a0125c52abe2b2308beeb21f0f2968601eaf2d"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/aeroblender1.20.1-1.0.2-rc1-neoforge-.ser"
-hash = "c854bf52ee71d3b6614a9ab80d95597758d00e88a7c9db85af56af5f4cea3faf"
+hash = "e61b5262c94eb2ea03235b26e1898b30ca7083c241bb5221487e122cbf95f3e2"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/aether1.20.1-1.5.2-neoforge-aether-1.20.1-1.5.2-neoforge.ser"
-hash = "0938b60c30500579c0d6112043d75d514cb84cbd947d63bb50258ee865416efa"
+hash = "a5e1f2eda2fe3b5efc758f23e64f02166a1b5243008715be6b9316e56a90d5c2"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/aethersdelight0.1.3.1-1.20.1-aethersdelight-0.1.3.1-1.20.1.ser"
-hash = "acf4844c49348b8a7f7d0612012cbb7f9c93278ea607de1fd4e772c4bd06bdd2"
+hash = "2755f51523614c3d6528ddb62df27767bd748eccae9c0ffd0a70d6b4512cb34a"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/aiimprovements0.5.2-AI-Improvements-1.20-0.5.2.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/architectury9.2.14-architectury-9.2.14-forge.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/auudio1.0.3-auudioforge1.0.3MC1.19.3.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/awcapi1.0.2-.ser"
-hash = "443ded0d92261186e66f49e29ffde0d1761126962fb61ed5cab5f412f4946e79"
+hash = "2d3e1b11d499df30e94553ef0aa736a9f7f3c0f4aabd58dd6e678daba7182c19"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/balm7.3.38-balm-forge-1.20.1-7.3.38-all.ser"
-hash = "ed3d8fcd21e2c8640299697418885723681267e8b153a60f8bc9f94ff3546718"
+hash = "be4c15f2dc460194b4de98253937374c461b04750ec9ca2ce0b9b922ade815e4"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/bcc4.0.8-BetterCompatibilityChecker-forge-4.0.8mc1.20.1.ser"
-hash = "bfcac53d052549e35ceb43fc424cb01e0ee05a0b3ff12f17294eff2c7c6237bf"
+hash = "437ad5b482f60310d6fd295329c3288114cbb814503c6f0ac590c5d6b5bd1a28"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/betterthanbunnies1.4.0-BetterThanBunnies-1.20.1-Forge-1.4.0.ser"
-hash = "73402dec96ed9e277eb8bd7ff1c37613add13fdd230f37552aed29ae4c34febc"
+hash = "47dfa0094ea8405c716bcc4f439ffce85ba5eeafeeefcdd6145a8c6bdaa8fce4"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/biomemusic1.20.1-3.5-biomemusic-1.20.1-3.5.ser"
-hash = "aadd7173e65b4ec382303325ced16a8c2aabb445d1cdfb293a73461f53a53f1e"
+hash = "6d3f09d157c6a50cd2b7f023b6e89bc6a46fcc71e8190cd1f69ad45420f740e1"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/brick_pyramids_infdev_1.0.0-brickpyramidsinfdev-1.0.0Alpha-forge-1.20.1.ser"
-hash = "9f80700cc74e15e646d7c9b60dae1bbb7dec9e38cb65b7b40b45daf0dfd54f16"
+hash = "2647b426126a9422bb32edce2defc417ef992d6120e62cc3d3de6aee9e551624"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/classicperipherals0.3.1-classicperipherals-0.3.1-forge-1.20.1.ser"
-hash = "d74ef566d0d51f879e6d430a9794be1741d656d332024e39e829495d816f9c00"
+hash = "4ec25102d212314fb4f8f4d3c8ab31eff0764a523b2733a3b752d2484a873c1a"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/cloth_config11.1.136-cloth-config-11.1.136-forge.ser"
-hash = "4bac9323d38f64a633d00b1b536b6f9fd350584f0ea366be63131f214ca59583"
+hash = "74c8674932fca49b26f06c1e9e8d520bb7ebaa1e499bd9beb47acb6a9400b018"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/colorwheel1.2.3+mc1.20.1-colorwheel-forge-1.2.3mc1.20.1.ser"
-hash = "3d5b198df5b9386adb14e5a2f220b5e4567adac64abfa85eb3c7a54050fe882c"
+hash = "24f99e4a9d3372a683bf814dd64fb94549472231552226c08e7529886bcdac02"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/computercraft1.117.1-cc-tweaked-1.20.1-forge-1.117.1.ser"
-hash = "89cbb122c694db25b7004c43b71cbce8cb6c03a3d5e60cb381dee715c00fad5f"
+hash = "50cc847796dd016093e7b18e47db7ad0da4ac594c30c5e0303f8861801e32fb2"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/coroutil1.20.1-1.3.7-coroutil-forge-1.20.1-1.3.7.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/create6.0.8-create-1.20.1-6.0.8.ser"
-hash = "351a3e5757e39086178eae45db85bb96e0481106c4d7d89ab2554d7f4b273fd0"
+hash = "9cf22a7d2c50fc29ea9b51e2d1b02cf96b8f58ad0c7000614b54ec5e1639005a"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/culllessleaves1.20.1-1.0.5-CullLessLeaves-Reforged-1.20.1-1.0.5.ser"
-hash = "5b4cde03dde827840511a8000f515a43a2a9f79e816cc0e5386935a5ba4b208f"
+hash = "6c9f0c2fa0d48e1ec1cc2adfa9edef3ac4872cbcb8c5df75d4d1194e4e80eb9a"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/cumulus_menus1.20.1-1.0.1-neoforge-.ser"
-hash = "057ff99a79443e7a6d0232d32b7a46799082796fef2d63612421ff49f7c26532"
+hash = "7b042ecec0e06dd0364aa3d07a8af861ac9663ae9df26dd7ea64ade1f9d42e88"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/cupboard1.20.1-3.5-cupboard-1.20.1-3.5.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/curios5.14.1+1.20.1-curios-forge-5.14.11.20.1.ser"
-hash = "27d1d36a98dd4a269cc4ce970e59796954ebde45aa502afb9f5b357039a91876"
+hash = "301fc1a88a9c574ae1251ad1d4a716bd8261b3772c937de9cddc2a23c2f06c02"
+
+[[files]]
+file = "lightspeed-cache/1.20.1/hasResource/darkness2.0.103-darkness-forge-1.20.1-2.0.103-fork.ser"
+hash = "defa1a306fcfa60b0a587c57fadda3e5594c01e383aecdc22d47e1644734bd81"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/deep_aether1.20.1-1.1.7-deepaether-1.20.1-1.1.7.ser"
-hash = "3b4059172e2f28a6e6bcc5d4b3003c67c909b100061c7afd0cfd0ff2e792da2c"
+hash = "1066921e3a1dc2c84b491459624b4daf520a9da3897181cf3c1c4e7b31d85a84"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/defaultoptions18.0.4-defaultoptions-forge-1.20.1-18.0.4.ser"
-hash = "6fb0190cbee0aac29797a279568363c17131bce730476b0f8a7a8460fb738964"
+hash = "3c5ff65a85b45d31e01b118afe815be8a32c146b250971e526c15ffa1ba056db"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/despawn_tweaker1.20.1-1.0.0-despawntweaker-1.20.1-1.0.0.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/difficult_caves1.0.0-DifficultCaves1.0.0-1.20.1.ser"
-hash = "401b291e80d7624042bba43da84a4c4bd07cab0828f0a6a5e643748de0065394"
+hash = "f5d7f3591bce7922c21ec138ae899e74ac2abc465c509bda56449723a7a51d73"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/dropdown_keybindings1.0.0-DropdownKeybindings-1.0.0.ser"
-hash = "516fe5adaad0152d6a04800b8dfe3376072d582db4fc69bcf8144a2018041db5"
+hash = "2e4236d4c7cc0f1c05bd92a936ccc3f77799695bc2b72cce405fd33eb41534e4"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/duplicationless1.20.1-1.1.5-duplicationless-1.20.1-1.1.5.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/dynamic_fps3.11.4-dynamic-fps-3.11.4minecraft-1.20.0-forge.ser"
-hash = "2a34be27bfc621bad47c8ed0afcd8c60c094726a03606df67f400ca846e49e02"
+hash = "3744b9c7b2d50b6a57aa560b8c00a3890a8811f02725e712ad87cd7954643851"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/embeddium0.3.31+mc1.20.1-embeddium-0.3.31mc1.20.1.ser"
-hash = "b579d91498c83eb06d4338660aa86cdd278aadab36dd0ff062182e4e1c01ffde"
+hash = "563d6d724a80e24f62a9452f0d9dbbf2c3582e4f1c9f8dea0246f7eb6039734e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/endofherobrine1.20.1-1.0.8.2-endofherobrine-1.20.1-1.0.8.2.ser"
-hash = "3b9d739f81b0d0fde1d7b2b0688ec0c18aefde833886c7365681d38a814ca52e"
+hash = "da12b380f0408682ad2b34b462a423e01aa7e1ecaf48dc4ab7671eb209f13470"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/endranoptimizer1.3.3-endran-optimizer-1.3.3.ser"
-hash = "cf529384d19908eca5465efa01d9a4f6b6a52963c1cc67c024a87d100f5c6a26"
+hash = "4691d37329d0035241cfa1b74a2232fccbad9e4c1725f8f560c5b59b36737b88"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/entity_model_features3.0.17-entitymodelfeatures1.20.1-forge-3.0.17.ser"
-hash = "3d96af5e93dbf8b7c63a412d9dcf96658f9efd5ad9c14b67af4ac3a77a870916"
+hash = "ebe307c06554c1be24d6235f7770a80cfe15466f059fbeb181f4e1e7105cbede"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/entity_texture_features7.0.13-entitytexturefeatures1.20.1-forge-7.0.13.ser"
-hash = "ad69021928370356d83b228be3356d4a7838096b0d9618ba1d136e7f7cd6a281"
+hash = "a0f489a3c1725f59d4b6920f9dbe09a2575a81fdf712e15558b7141290286c2b"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/fancymenu3.8.1-fancymenuforge3.8.1MC1.20.1.ser"
-hash = "a906196cf04b55439b80aae6d3c2b20d9b5caf81261f67c3c332bc3e623ad1f6"
+hash = "ee69a621f79f67facbf77b95b49733a0b83632a5fad95bc390ec537e37cfeec4"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/farmersdelight1.20.1-1.2.11-FarmersDelight-1.20.1-1.2.11.ser"
-hash = "1bf100ddf2d84c16ff3ba5a474be7e1b6ff6a98bdf6215891dcdbb326ebb770b"
+hash = "f458607951a2695b79ed0922678c3c61e84fa9847a78abc05e66716b80df4629"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/farmersdelightplus1.20.1-1.3.1-FarmersDelightPlus-1.20.1-1.3.1.ser"
-hash = "00134cd9f916f441ed175bbb592f21c775177b4a15ea35cae388843fcd19ba3f"
+hash = "f77e392842aead559dff1a6fb03f78fc36618eca6ebc6047da9df68169021d97"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/fastbench8.0.4-FastWorkbench-1.20.1-8.0.4.ser"
-hash = "edf07b7457f81b8eb0c4a26562d547290168849ea6b0fcc21d43da7dbe67e4f2"
+hash = "a4d9cd4b51ba17cb33ee8d11eb2f7aa347fca8462fb761a0c675e336db093ce8"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/fastfurnace8.0.2-FastFurnace-1.20.1-8.0.2.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/fastload3.4.0-Fastload-Reforged-mc1.20.1-3.4.0.ser"
-hash = "40b44e39dfbe6e0cf50fb323bc986b8c76e42dedbc736be791f69c1676a58535"
+hash = "878e2ce93812de4449cf50e9b94ae22942c816b0d7cbb2e50834dc684d4c5a10"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/fastsuite5.1.2-FastSuite-1.20.1-5.1.2.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/ferritecore6.0.1-ferritecore-6.0.1-forge.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/flywheel1.0.5-.ser"
-hash = "0115cc23ee5a1ee563b017b540ee0f1f889417973c295e475533255e4bd5f30c"
+hash = "2f02fe4cc0d72a302209ee874f120756682911405cea19614feb191acd88b0e8"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/forge47.3.22-forge-1.20.1-47.3.22-universal.ser"
-hash = "7452ac2f1fb7d4ba8b2ead830d586ed8f69bfb26bef1bdad45ced2c8faddc149"
+hash = "a1167555d1213d9435458817e51ca5dce3ada4a1aee3147fa6ee5a6854281864"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/geckolib4.8.3-geckolib-forge-1.20.1-4.8.3.ser"
-hash = "4a328458fe6f297a5d4a39b432ebe2eb401cfff9de842489042c13b1652720fc"
+hash = "f2b4b0758b7286d5f5b53a84b765dd5fe4f57f969dc27d36d6afad02187fb25c"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/globalgamerules8.1.0.12-GlobalGameRules-1.20.1-8.1.0.12.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/globalpacks19.3.7-globalpacks-forge-1.20.1-19.3.7.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/hardcoretruedarkness4.0.0-hardcoretruedarkness-4.0.0.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/hardermonsterboats46.1.1-hardermonsterboats-1.20-46.1.1.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/hiddennames1.20.1-1.0.6-hiddennames-1.20.1-1.0.6.ser"
-hash = "f22f010b8fa5801096aa728166b094dc38991d9196356298b122d61b5c5c2886"
+hash = "facd64948c7a0caca050d7396052c9614dad0a2b70a739de83ccb1759cfbcde8"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/hidetab02 final-HIDE-TABv0.2F-1.20.1FORGE.ser"
-hash = "e26ca20dfb3fed6b0570e903f0faef697757148a9d8c10b2b7ea4847e7a52b1e"
+hash = "72b1c00d97237d0620582fc907306deba85997a05f6bb5071556e022b93d3170"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/ichunutil1.0.3-iChunUtil-1.20.1-Forge-1.0.3.ser"
-hash = "8c2dce1f723b889ecc7bab791575a1d0f257d95affd5f576a29b4189b8cb2f98"
+hash = "04f7a2b8df0e56e9848e97781f8686bf165292e4180e5065d3f88685515f89ac"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/immediatelyfast1.5.4+1.20.4-ImmediatelyFast-Forge-1.5.41.20.4.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/item_obliterator2.3.0-Item-Obliterator-NeoForge-MC1.20.1-2.3.1.ser"
-hash = "56413e791d9f5d09d889df2b0a1235817296791ec80a950c3f3aee976b36bebc"
+hash = "5dadcc9bbbbd10dd349a022cdd869f862c896914ab0d6d7e79c5f46d59ea57e5"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/jei15.20.0.129-jei-1.20.1-forge-15.20.0.129.ser"
-hash = "d30caa278470efa654617ef95d266c2850828343c21c52dcf857eb128256652b"
+hash = "e068be8ecb143447ba2b208cb4501eed4170571ba995db227db09b68505378a0"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/key_binding_patch1.3.3.5-MC-1.20KeyBindingPatchv1.3.3.5-2025-4-1.ser"
-hash = "eec8645b545bde100b4fafa02c60e0db7eb3eb1fd9065311144afc4f3ed4d298"
+hash = "ff3291bcbb5a32a9587464b2ff70ac4f9576d2cb6a15c51c7049b95fb8483f7e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/keybindhider1.2.2-KeybindHider-Forge-1.20.1-1.2.2.ser"
-hash = "9bfb4f270894aea4f93e21e0a8870618f6aaea0b4cd06bbae3556a29ab95c9a1"
+hash = "ddb48779d9816306cdcd32594b929c02c80beb23f50a5cad44a2cc1eae48399c"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/konkrete1.8.0-konkreteforge1.8.0MC1.20-1.20.1.ser"
-hash = "48b778a003d695ad656d8adb2b708e14b9849197834eb2cec44f1edc393b8427"
+hash = "b776f4aaf8a3e1bdfc8a3240f17e7dc0fa79c57cc0d8eeddb1374e8df1c3b8b4"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/kuma_api20.1.12-.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/lightspeed1.20.1-1.1.2hotfix-lightspeed-1.20.1-1.1.2hotfix.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/melody1.0.2-melodyforge1.0.3MC1.20.1-1.20.4.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/modernfix5.26.2+mc1.20.1-modernfix-forge-5.26.2mc1.20.1.ser"
-hash = "9494c253e05ea9a26884857f91785c87cb38ac0717913a283ac6d0a72ac3619f"
+hash = "082bff8746cddc3a96521725277ccad42bf59974bea67ab42338d4252b862862"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/more_underground_structures7.1.0-moreundrgroundstructures1.20.18.1.ser"
-hash = "c82290419fce5d766493425dfc7477c803fe37e10a573f72fecbb77de2126c1e"
+hash = "a3677cc7568e17f3697ba729bc5c4c921c37199c4eb4b799ccb14e0af00b8747"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/mr_beta_nether1-V1-beta-nether-V1-1.20.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/mr_farmers_cuttingtheaether1.20.1-1.0-farmers-cutting-the-aether-1.20.1-1.0.ser"
-hash = "c854bf52ee71d3b6614a9ab80d95597758d00e88a7c9db85af56af5f4cea3faf"
+hash = "e61b5262c94eb2ea03235b26e1898b30ca7083c241bb5221487e122cbf95f3e2"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/necronomicon1.6.0-Necronomicon-Forge-1.6.01.20.1.ser"
-hash = "8b107a68f4e4f3a6a528563cd5ab117785da4c08d7f14f46ae14299767e36c7c"
+hash = "f32328070c7184a80503873eb9f0a08f5dac2a284e6bc899dbdbb204822ef10e"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/nitrogen_internals1.20.1-1.0.12-neoforge-.ser"
-hash = "4170f50e8cc8c787024bbb61aaf3850f4da9c29dc82372f63aa552097186dd16"
+hash = "994c9d57d64ac94d281904f0b37a949c1dcade2eae66fcbe73990912742982dd"
+
+[[files]]
+file = "lightspeed-cache/1.20.1/hasResource/noembediummenu1.1-noembediummenu-1.1.ser"
+hash = "413a81444208cd6d0bf012656a4fda791567e4a55df154400570240f6a2f8f2f"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/nostalgic_tweaks2.0.0-beta.922-NostalgicTweaks-mc1.20.1-Forge-2.0.0-beta.922.ser"
-hash = "13f6e138bbe11d40c4e9a6f5eba6b79525e42474f1fba1d0e61aeb55b1ef2a20"
+hash = "86b64c10da83bf98a67db6ef3ed16ca426e71cdbb1378f2299825e762ca2738c"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/nyfsspiders3.0.1-nyfsspiders-Forge-1.20.1-3.0.1.ser"
-hash = "443ded0d92261186e66f49e29ffde0d1761126962fb61ed5cab5f412f4946e79"
+hash = "2d3e1b11d499df30e94553ef0aa736a9f7f3c0f4aabd58dd6e678daba7182c19"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/oculus1.8.0-oculus-mc1.20.1-1.8.0.ser"
-hash = "02edcdfc692f25d08b799af5a5931eed03c50a6bcea6a7cbae4387e4e8594c13"
+hash = "2c906c6597cb684c9fa939e9a4daed2bd13e714f350e880269db20a7540da7f9"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/onrdsrexp1.0-StructuresDeserts.ser"
-hash = "90a8109e7c84b1d4398a3fdb0022aaaed88ce8e48a0b21e99f00b42a738c3b79"
+hash = "270a20c70fa3221a135f135d06c01c05a1aaeac9acf12244576e79c91ec735a2"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/placebo8.6.3-Placebo-1.20.1-8.6.3.ser"
-hash = "7b12a093d1df8a0648cc9adc390851da28b6cf550db709d9080775fe24ffb506"
+hash = "e6367764c2ea8b887e59ab4022e038dbbe61a93ccfded9069440d26a42ff9e9c"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/ponder1.0.91-.ser"
-hash = "0d7fe442a51ec8907b8202f76a25c93e7bc3f7bfee117c65e90ce0e7bff76ea2"
+hash = "377c45eeb4319507e728bccd4938b2d5539ef76f8b377ae96a1401473d6a6772"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/proximitychat1.2.0-proximitychat-1.20.1-Forge-1.2.0.ser"
-hash = "49ee0bfe4d490e44f9337aa20c0f785c800eb4d15f08073ee94983d8130a1345"
+hash = "50a9870394d161d4ab95e8ff657534093066d780c11e163d1a380ed4a67b1860"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/railways1.7.2+forge-mc1.20.1-SteamRails-1.7.2forge-mc1.20.1.ser"
-hash = "aa730a33dc92a8140e09048b2ad6f91fa5575a6c834d1a60eb6c29e7816f2a6d"
+hash = "8dc4bb7b545c187327d548396b44913997fa47cee7f054e6c36743ff35564e70"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/repurposed_structures7.1.21+1.20.1-forge-repurposedstructures-7.1.211.20.1-forge.ser"
-hash = "7bb47bba48dc9b39bb0ec164a5d44a8533755e89d91c9354c3426ea898d2c1bd"
+hash = "c3b986d7e438b57cd6f091dd385e9badd57cf0b421158a3ef8e9fbb830cd87d0"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/reskin3.0.2-ReSkin-1.20-3.0.2-universal.ser"
-hash = "111ae8100fb20a9381070425534610c77bafa83f2f985eab17123ca92b08a198"
+hash = "da0e8d04f66f49c469af96f8ec19febda9e541045520b5e726ca9b16890427b7"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/saturn0.1.3-saturn-mc1.20.1-0.1.3.ser"
-hash = "90a8109e7c84b1d4398a3fdb0022aaaed88ce8e48a0b21e99f00b42a738c3b79"
+hash = "270a20c70fa3221a135f135d06c01c05a1aaeac9acf12244576e79c91ec735a2"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/sekclib1.0.2-SekCLib-1.20-1.0.2-universal.ser"
-hash = "3dee7a395b73dd8b7e3b348e301f65b7349a1183f72ea1d634c17db175263dc6"
+hash = "10b431640fc9d60b7f6be282765be2bd919b69399d64f23c7e7e144ba8246c71"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/sleepnt1.0.0-sleepnt-1.0.0-1.20.1.ser"
-hash = "6d76b321ecc6de9e91d4437a9bc825c0df9e3c2e9ab0a2605f35d967ca2727fa"
+hash = "1c62f9e7435eb97d5058acd71c474d7e493914ef113de8312172154848df54cc"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/smoothboot0.0.4-smoothbootreloaded-mc1.20.1-0.0.4.ser"
-hash = "e9fa9fd05093c78676224e2ca4ddc361082c732393558b00b9c788a11a6125ff"
+hash = "176b621397e801706081f73e205a5dffe46d02f349d86b884270bb61c067bc17"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/sound_physics_remastered1.20.1-1.5.1-sound-physics-remastered-forge-1.20.1-1.5.1.ser"
-hash = "f3014e45fbb44072968d2da4e950f263d422e4e7e351b3ec9dc1cbe181af627c"
+hash = "54b193d7473ed4daf5a5e84cf1c6ee7af5e9b5cbf53fd8287a7b4d59e6f5667b"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/sparsestructuresreforged1.20.1-0.0.1-sparsestructuresreforged-1.20.1-0.0.1.ser"
-hash = "90a8109e7c84b1d4398a3fdb0022aaaed88ce8e48a0b21e99f00b42a738c3b79"
+hash = "270a20c70fa3221a135f135d06c01c05a1aaeac9acf12244576e79c91ec735a2"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/supermartijn642configlib1.1.8-supermartijn642configlib-1.1.8-forge-mc1.20.ser"
-hash = "90a8109e7c84b1d4398a3fdb0022aaaed88ce8e48a0b21e99f00b42a738c3b79"
+hash = "270a20c70fa3221a135f135d06c01c05a1aaeac9acf12244576e79c91ec735a2"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/sword_block1.0.6-ClassicSwordBlocking-1.20-1.0.6.ser"
-hash = "3c95727adc7ae3fe7cfd2e3abab8ed35f8ed6794ce34314b090b37afa51a3be8"
+hash = "22dfae626d1c8bcf3f7e683681c316e6c909d47ecf6b36890e2b3c8eaa85b370"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/terrablender3.0.1.10-TerraBlender-forge-1.20.1-3.0.1.10.ser"
-hash = "bc9e5cc7e0b02a1ac2b461a1321ed749d2845f6c7e353a1f69cbd3ae12f801e9"
+hash = "a7daf8ed61344b71d0c54831a5fdbdb37da9521a9f12223e892b0df3cc925a24"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/the_fletching_table_mod1.3-TheFletchingTableMod1.20.1.ser"
-hash = "b65cb6c188610669e55019da59d50ccceaf604b400768ed1fa6bf63704ca1c4f"
+hash = "8fe46c439c3eaf9ba4092ee4dfa38b067a2e9d8578c0e290614591bf93b417c6"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/the_masked5.2.0-themasked-5.2.0-1.20.1.ser"
-hash = "eea893574916a0c86ad433316ffbd5fc1e37ce0dcae94d93862ae0d8aa162beb"
+hash = "9bb5d5e7692c2acade62a1843f19acfa57838300df44fcb6e6480157dae646c3"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/the_wonderland2.1.3-thewonderland-2.1.4-1.20.1.ser"
-hash = "8f301e0786e66345944b2d4cebe1fed201de74fb61c40b7b53d1564aab1be0e6"
+hash = "26f95397213b39bd397f6c202dd44060abc8e5217a483a7fbf2d09e6756b971f"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/hasResource/zombieawareness1.20.1-1.13.1-zombieawareness-1.20.1-1.13.1.ser"
-hash = "f34bd050aef036dd1d4a7e7f74a8f32ead5c783277e406fc8f6248f38c55c9f8"
+hash = "c1d87f62baabe8b1c4212707e05d26acfbd770eadd630dfaa2fad4ca6e77c870"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/namespaces/advancedperipherals0.7.46r-AdvancedPeripherals-1.20.1-0.7.46r.ser"
@@ -2311,6 +2327,10 @@ hash = "e8e118c2fbdc355852b90d14ade135b7b83ddc500721b43695ae1be581754e88"
 [[files]]
 file = "lightspeed-cache/1.20.1/namespaces/curios5.14.1+1.20.1-curios-forge-5.14.11.20.1.ser"
 hash = "0d47bc8b9f3ec17a49a470d997c43898a10dce7a3119779707288afe83b153b9"
+
+[[files]]
+file = "lightspeed-cache/1.20.1/namespaces/darkness2.0.103-darkness-forge-1.20.1-2.0.103-fork.ser"
+hash = "55d4d8f7596912504614a5047aaeffdd01b9feadeeed54a985a48fb3624ed370"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/namespaces/deep_aether1.20.1-1.1.7-deepaether-1.20.1-1.1.7.ser"
@@ -2491,6 +2511,10 @@ hash = "e8e118c2fbdc355852b90d14ade135b7b83ddc500721b43695ae1be581754e88"
 [[files]]
 file = "lightspeed-cache/1.20.1/namespaces/nitrogen_internals1.20.1-1.0.12-neoforge-.ser"
 hash = "8ef88e0ca2730c8382c1437ab935ef934d27c727ce690f1df5e739b15e653be8"
+
+[[files]]
+file = "lightspeed-cache/1.20.1/namespaces/noembediummenu1.1-noembediummenu-1.1.ser"
+hash = "e8e118c2fbdc355852b90d14ade135b7b83ddc500721b43695ae1be581754e88"
 
 [[files]]
 file = "lightspeed-cache/1.20.1/namespaces/nostalgic_tweaks2.0.0-beta.922-NostalgicTweaks-mc1.20.1-Forge-2.0.0-beta.922.ser"
@@ -3801,6 +3825,10 @@ hash = "318a137293d0919ddeb5e25c3facd5bc83de60366ac6cd5707d28ee650330f62"
 metafile = true
 
 [[files]]
+file = "mods/noembediummenu-1.1.jar"
+hash = "dd9e4397353a727fdfe50d6d1c742a55fe4d5461a48af76b23629b18548dc2fb"
+
+[[files]]
 file = "mods/nostalgic-tweaks.pw.toml"
 hash = "e1964147d188190af45da1cb7885eb568f96d980535ad4869354230a9cf2ab48"
 metafile = true
@@ -3868,6 +3896,11 @@ metafile = true
 [[files]]
 file = "mods/the-fletching-table-mod.pw.toml"
 hash = "7a2a1928c8639d38ea8036a30cbb647c8d1b915824aabca9b7dc209f8a46525a"
+metafile = true
+
+[[files]]
+file = "mods/true-darkness-forge-updated-fork.pw.toml"
+hash = "4e783ca2336af03823a355e60c72f3e8d743ae9e5936d314adf43113adeb618a"
 metafile = true
 
 [[files]]
@@ -3940,7 +3973,7 @@ hash = "fcc5af347ca4e741d1a2cabd250f8f03abdd06504488edc02ec4691e22f5bfb9"
 
 [[files]]
 file = "shaderpacks/Epoch_Shader_v1.3.3.zip.txt"
-hash = "d4b4adf22dc431cd2684744932d795b8ec4618ea836b347acf6d71b842dd19cd"
+hash = "58129cffcaa85ac35978291dd99652ce80ebf872366186bf3417112bc5e5ccee"
 
 [[files]]
 file = "shaderpacks/MC-Retro.zip"
@@ -3948,7 +3981,7 @@ hash = "e22b0fd2b8c208e930fb1baae7270e7ee73f53504efa2e04dca9cbcbc375eb3b"
 
 [[files]]
 file = "shaderpacks/MC-Retro.zip.txt"
-hash = "a7a2c09b0b81625af54b479f74be892a29583f5d231942060e75cc210ce60dbd"
+hash = "508713785ecffcf97aef65c08672bd7e5335ee8fc6e74eacd90a6bf4a68011a0"
 
 [[files]]
 file = "shaderpacks/Retrus_1.0.zip"

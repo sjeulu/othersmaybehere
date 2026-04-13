@@ -455,7 +455,7 @@
     "disableMonsterArmorSpawn": false,
     "disableMonsterEnchantSpawn": false,
     "piglinOnlyGoldSwordSpawn": false,
-    "monsterSpawnCap": 20,
+    "monsterSpawnCap": 90,
     "animalSpawnCap": 15,
     "oldAnimalSpawnList": {
       "list": [
