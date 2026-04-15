@@ -841,6 +841,14 @@ file = "global_packs/required_data/tuning/data/computercraft/recipes/wireless_mo
 hash = "87e0d7a151362aac43010b8aac66b3a0edaf03192e8278273778a444e2349b3d"
 
 [[files]]
+file = "global_packs/required_data/tuning/data/minecraft/tags/functions/tick.json"
+hash = "a19abb9c907df9a84decdbdc13e4db787e8a945379a7544afa0e9f1489ed59ab"
+
+[[files]]
+file = "global_packs/required_data/tuning/data/tuning/functions/handle_ethereal_pillow_usage.mcfunction"
+hash = "ffc18de992e840c72f62142fcc92830324d98bbc658c0c332978b5aac669dee1"
+
+[[files]]
 file = "global_packs/required_data/tuning/data/tuning/recipes/wireless_modem_advanced.json"
 hash = "fceb05b7fe5682f3998065c58bde890830027926742916446dacea96cf92daf5"
 
@@ -1052,6 +1060,11 @@ metafile = true
 [[files]]
 file = "mods/entity-texture-features-fabric.pw.toml"
 hash = "f20ab11fec09413c774196d34f4fe06bd35584ff46902e432dad1180b20a7667"
+metafile = true
+
+[[files]]
+file = "mods/exposure.pw.toml"
+hash = "8892d5b079962918bfc90e2c026c7813b07409d93789090ac56e2f990e84c3e2"
 metafile = true
 
 [[files]]
